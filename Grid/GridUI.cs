@@ -28,6 +28,7 @@ namespace MissionPlanner.Grid
 {
     public partial class GridUI : Form
     {
+
         private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 
         // Variables
@@ -566,6 +567,7 @@ namespace MissionPlanner.Grid
         // Do Work
         private async void domainUpDown1_ValueChanged(object sender, EventArgs e)
         {
+            NUM_leadin.Value = NUM_leadin2.Value;
             if (loading)
                 return;
 
@@ -1364,10 +1366,12 @@ namespace MissionPlanner.Grid
         {
             if (CHK_advanced.Checked)
             {
-                if (!tabControl1.TabPages.Contains(tabGrid))
-                    tabControl1.TabPages.Add(tabGrid);
-                if (!tabControl1.TabPages.Contains(tabCamera))
-                    tabControl1.TabPages.Add(tabCamera);
+                //if (!tabControl1.TabPages.Contains(tabGrid))
+                    //tabControl1.TabPages.Add(tabGrid);
+                //if (!tabControl1.TabPages.Contains(tabCamera))
+                        //tabControl1.TabPages.Add(tabCamera);
+                tabControl1.TabPages.Remove(tabGrid);
+                tabControl1.TabPages.Remove(tabCamera);
             }
             else
             {
@@ -1907,5 +1911,126 @@ namespace MissionPlanner.Grid
 
             domainUpDown1_ValueChanged(sender, e);
         }
+
+        private void CHK_dispenser_CheckedChanged(object sender, EventArgs e)
+        {
+            if(CHK_dispenser.Checked == true)
+            {
+                CHK_dispenser.Checked = true;
+                CHK_Tubete.Checked = false;
+                CHK_fotogrametria.Checked = false;
+                label32.Visible = true; //leadin
+                NUM_leadin.Visible = false;
+                NUM_leadin2.Visible = true;
+                label8.Visible = false;//overlap
+                num_overlap.Visible = false;
+                label15.Visible = false;//sidelap
+                num_sidelap.Visible = false;
+                label26.Visible = false;//camera
+                CMB_camera.Visible = false;
+                groupBox2.Visible = false;
+                NUM_Distance.Visible = true;
+                label2.Visible = true;
+                NUM_UpDownFlySpeed.Value = 12;
+
+
+
+
+
+
+
+
+
+
+
+            }
+        }
+
+        private void CHK_fotogrametria_CheckedChanged(object sender, EventArgs e)
+        {
+            if(CHK_fotogrametria.Checked == true)
+            {
+                CHK_fotogrametria.Checked = true;
+                CHK_Tubete.Checked = false;
+                CHK_dispenser.Checked = false;
+                label32.Visible = false; //leadin
+                NUM_leadin.Visible = false;
+                NUM_leadin2.Visible = false;
+                label8.Visible = true;//overlap
+                num_overlap.Visible = true;
+                label8.Text = "Sobreposição Frontal [%]";
+                label15.Visible = true;//sidelap
+                num_sidelap.Visible = true;
+                label26.Visible = true;//camera
+                CMB_camera.Visible = true;
+                groupBox2.Visible = true;
+                NUM_Distance.Visible = false;
+                label2.Visible = false;
+                NUM_UpDownFlySpeed.Value = 12;
+            }
+        }
+        private void CHK_Tubete_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CHK_Tubete.Checked == true)
+            {
+                CHK_Tubete.Checked = true;
+                CHK_dispenser.Checked = false;
+                CHK_fotogrametria.Checked = false;
+                label32.Visible = false; //leadin
+                NUM_leadin.Visible = false;
+                NUM_leadin2.Visible = false;
+                label8.Visible = true;//overlap mudar nome pra Dist entre tubetes
+                num_overlap.Visible = true;
+                label8.Text = "Dist entre tubetes";
+                label15.Visible = false;//sidelap
+                num_sidelap.Visible = false;
+                label26.Visible = false;//camera
+                CMB_camera.Visible = false;
+                groupBox2.Visible = false;
+                NUM_Distance.Visible = true;
+                label2.Visible = true;
+                NUM_UpDownFlySpeed.Value = 10;
+            }
+        }
+
+        private void tabControl1_MouseCaptureChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void tabSimple_Paint(object sender, PaintEventArgs e) //arruma layout
+        {
+            if (CHK_dispenser.Checked == true)
+            {
+                CHK_dispenser.Checked = true;
+                CHK_Tubete.Checked = false;
+                CHK_fotogrametria.Checked = false;
+                label32.Visible = true; //leadin
+                NUM_leadin.Visible = false; // nao usa
+                NUM_leadin2.Visible = true;
+                NUM_leadin2.Value = NUM_leadin.Value;
+                label8.Visible = false;//overlap
+                num_overlap.Visible = false;
+                label15.Visible = false;//sidelap
+                num_sidelap.Visible = false;
+                label26.Visible = false;//camera
+                CMB_camera.Visible = false;
+                groupBox2.Visible = false;
+                NUM_Distance.Visible = true;
+                label2.Visible = true;
+            }
+            NUM_altitude.Location = new System.Drawing.Point(174, NUM_altitude.Location.Y);
+            NUM_angle.Location = new System.Drawing.Point(174, NUM_angle.Location.Y);
+            NUM_UpDownFlySpeed.Location = new System.Drawing.Point(174,NUM_UpDownFlySpeed.Location.Y);
+            NUM_focallength.Location = new System.Drawing.Point(174,NUM_focallength.Location.Y);
+            TXT_imgheight.Location = new System.Drawing.Point(174,TXT_imgheight.Location.Y);
+            TXT_imgwidth.Location = new System.Drawing.Point(174, TXT_imgwidth.Location.Y);
+            TXT_sensheight.Location = new System.Drawing.Point(174,TXT_sensheight.Location.Y);
+            TXT_senswidth.Location = new System.Drawing.Point(174,TXT_senswidth.Location.Y);
+            TXT_fovH.Location = new System.Drawing.Point(174,TXT_fovH.Location.Y);
+            TXT_fovV.Location = new System.Drawing.Point(174, TXT_fovV.Location.Y);
+            CHK_fotogrametria.Location = new System.Drawing.Point(147, CHK_fotogrametria.Location.Y);
+        }
+
+        
     }
 }

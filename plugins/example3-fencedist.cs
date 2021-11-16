@@ -48,7 +48,7 @@ namespace FenceDist
             but = new ToolStripMenuItem("Draw Fence Dist");
             but.Click += but_Click;
             ToolStripItemCollection col = Host.FDMenuMap.Items;
-            col.Add(but);
+            //col.Add(but);
             return true;
         }
 

@@ -136,7 +136,7 @@
     <value>Mudar modo para auto</value>
   </data>
   <data name="goHereToolStripMenuItem.Text" xml:space="preserve">
-    <value>Va para aqui</value>
+    <value>Voar até aqui</value>
   </data>
   <data name="quickView1.ToolTip" xml:space="preserve">
     <value>Clique duplo para mudar</value>
@@ -196,7 +196,7 @@
     <value>Ações</value>
   </data>
   <data name="BUT_DFMavlink.Text" xml:space="preserve">
-    <value>Descarregar memória via MARVLink</value>
+    <value>Donwload Log do Drone</value>
   </data>
   <data name="CHK_autopan.ToolTip" xml:space="preserve">
     <value>Centralize o mapa na cordenada atual</value>
@@ -205,7 +205,7 @@
     <value>Trocar modo para RTL</value>
   </data>
   <data name="tablogbrowse.Text" xml:space="preserve">
-    <value>Arquivos da memória</value>
+    <value>Log do Drone</value>
   </data>
   <data name="BUT_mountmode.ToolTip" xml:space="preserve">
     <value>Muda o modo da esquerda</value>
@@ -220,7 +220,7 @@
     <value>Ajuste do angulo altitude</value>
   </data>
   <data name="triggerCameraToolStripMenuItem.Text" xml:space="preserve">
-    <value>Disparar camera agora</value>
+    <value>Teste Câmera</value>
   </data>
   <data name="but_disablejoystick.Text" xml:space="preserve">
     <value>Desabilitar Joystick</value>
@@ -247,7 +247,7 @@
     <value>Ver dados brutos da Giro e Acelerometro e os raios</value>
   </data>
   <data name="saveFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gravar arquivo</value>
+    <value>Salvar arquivo</value>
   </data>
   <data name="PointCameraCoordsToolStripMenuItem1.Text" xml:space="preserve">
     <value>Apontar Camera Coord</value>
@@ -268,13 +268,13 @@
     <value>Criar KML + gpx</value>
   </data>
   <data name="tabPagemessages.Text" xml:space="preserve">
-    <value>Mansagem</value>
+    <value>Mensagens</value>
   </data>
   <data name="tabActions.Text" xml:space="preserve">
     <value>Ações</value>
   </data>
   <data name="loadFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Carregar arquivo</value>
+    <value>Abrir arquivo</value>
   </data>
   <data name="BUTactiondo.ToolTip" xml:space="preserve">
     <value>Executar a ação da esquerda</value>
@@ -292,7 +292,7 @@
     <value>Trocar com o mapa</value>
   </data>
   <data name="tabQuick.Text" xml:space="preserve">
-    <value>Rapido</value>
+    <value>Dados do Voo</value>
   </data>
   <data name="BUT_loadtelem.Text" xml:space="preserve">
     <value>Carregar Log</value>
@@ -304,7 +304,7 @@
     <value>Ajuste a alt mostrada em 0, e a alt Home como mostrada 0</value>
   </data>
   <data name="tabStatus.Text" xml:space="preserve">
-    <value>Estatus</value>
+    <value>Status</value>
   </data>
   <data name="BUT_select_script.Text" xml:space="preserve">
     <value>Selecione Script</value>
@@ -319,10 +319,10 @@
     <value>Trocar para Auto</value>
   </data>
   <data name="BUT_setmode.Text" xml:space="preserve">
-    <value>Trocar modo</value>
+    <value>Land</value>
   </data>
   <data name="onOffCameraOverlapToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sobreposição da camera</value>
+    <value>Mostrar Sobreposição da camera</value>
   </data>
   <data name="BUT_logbrowse.Text" xml:space="preserve">
     <value>Rever log</value>
@@ -331,7 +331,7 @@
     <value>Parar gravação</value>
   </data>
   <data name="flyToHereAltToolStripMenuItem.Text" xml:space="preserve">
-    <value>Voar para Alt aqui</value>
+    <value>Definir altura para voar</value>
   </data>
   <data name="lbl_sats.ToolTip" xml:space="preserve">
     <value>Contagem dos Satelites</value>
@@ -341,5 +341,14 @@
   </data>
   <data name="lbl_hdop.ToolTip" xml:space="preserve">
     <value>HDOP GPS</value>
+  </data>
+  <data name="BUT_setwp.Text" xml:space="preserve">
+    <value>Ir para</value>
+  </data>
+  <data name="tabServo.Text" xml:space="preserve">
+    <value>Dispenser</value>
+  </data>
+  <data name="tabTLogs.Text" xml:space="preserve">
+    <value>Log da Telemetria</value>
   </data>
 </root>

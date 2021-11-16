@@ -305,7 +305,7 @@ namespace MissionPlanner.GCSViews
 
             // hide spline wp options if not arducopter
             if (MainV2.comPort.MAV.cs.firmware == Firmwares.ArduCopter2)
-                CHK_splinedefault.Visible = true;
+                CHK_splinedefault.Visible = false;
             else
                 CHK_splinedefault.Visible = false;
 
@@ -1302,7 +1302,7 @@ namespace MissionPlanner.GCSViews
             createCircleSurveyToolStripMenuItem.Visible = MainV2.DisplayConfiguration.displayCircleSurveyAutoWp;
             pOIToolStripMenuItem.Visible = MainV2.DisplayConfiguration.displayPoiMenu;
             trackerHomeToolStripMenuItem.Visible = MainV2.DisplayConfiguration.displayTrackerHomeMenu;
-            CHK_verifyheight.Visible = MainV2.DisplayConfiguration.displayCheckHeightBox;
+            //CHK_verifyheight.Visible = MainV2.DisplayConfiguration.displayCheckHeightBox;
 
             //hide dynamically generated toolstrip items in the auto WP dropdown (these do not have name objects populated)
             foreach (ToolStripItem item in autoWPToolStripMenuItem.DropDownItems)
@@ -2122,7 +2122,7 @@ namespace MissionPlanner.GCSViews
             }
             else
             {
-                BUT_Add.Visible = true;
+                BUT_Add.Visible = false;
                 processToScreen(MainV2.comPort.MAV.wps.Select(a => (Locationwp) a.Value).ToList());
             }
 
@@ -2577,6 +2577,21 @@ namespace MissionPlanner.GCSViews
 
         public void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
+            //a visibilidade desses botoes sao alterados em o utros lugares por isso estão sendo escondidos aqui
+            
+            polygonToolStripMenuItem.Visible = false;
+            geoFenceToolStripMenuItem.Visible = false;
+            rallyPointsToolStripMenuItem.Visible = false;
+            mapToolToolStripMenuItem.Visible = false;
+            pOIToolStripMenuItem.Visible = false;
+            trackerHomeToolStripMenuItem.Visible = false;
+            createWpCircleToolStripMenuItem.Visible = false;
+            createSplineCircleToolStripMenuItem.Visible = false;
+            areaToolStripMenuItem.Visible = false;
+            textToolStripMenuItem.Visible = false;
+            createCircleSurveyToolStripMenuItem.Visible = false;
+            surveyGridToolStripMenuItem.Visible = false;
+
             if (CurentRectMarker == null && CurrentRallyPt == null && groupmarkers.Count == 0)
             {
                 deleteWPToolStripMenuItem.Enabled = false;
@@ -2595,8 +2610,8 @@ namespace MissionPlanner.GCSViews
                 }
                 else
                 {
-                    geoFenceToolStripMenuItem.Visible = true;
-                    rallyPointsToolStripMenuItem.Visible = true;
+                    geoFenceToolStripMenuItem.Visible = false; // alterado pra false
+                    rallyPointsToolStripMenuItem.Visible = false; // alterado pra false 
                 }
             }
 
@@ -7655,6 +7670,71 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             MainMap.Position = MainV2.comPort.MAV.cs.HomeLocation;
             if (MainMap.Zoom < 17)
                 MainMap.Zoom = 17;
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            GridPlugin grid = new GridPlugin();
+            grid.Host = new PluginHost();
+            grid.but_Click(sender, e);
+        }
+
+        private void openKMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog fd = new OpenFileDialog())
+            {
+                fd.Filter = "Google Earth KML |*.kml;*.kmz";
+                DialogResult result = fd.ShowDialog();
+                string file = fd.FileName;
+                if (file != "")
+                {
+                    try
+                    {
+                        string kml = "";
+                        string tempdir = "";
+                        if (file.ToLower().EndsWith("kmz"))
+                        {
+                            ZipFile input = new ZipFile(file);
+
+                            tempdir = Path.GetTempPath() + Path.DirectorySeparatorChar + Path.GetRandomFileName();
+                            input.ExtractAll(tempdir, ExtractExistingFileAction.OverwriteSilently);
+
+                            string[] kmls = Directory.GetFiles(tempdir, "*.kml");
+
+                            if (kmls.Length > 0)
+                            {
+                                file = kmls[0];
+
+                                input.Dispose();
+                            }
+                            else
+                            {
+                                input.Dispose();
+                                return;
+                            }
+                        }
+
+                        var sr = new StreamReader(File.OpenRead(file));
+                        kml = sr.ReadToEnd();
+                        sr.Close();
+
+                        // cleanup after out
+                        if (tempdir != "")
+                            Directory.Delete(tempdir, true);
+
+                        kml = kml.Replace("<Snippet/>", "");
+
+                        var parser = new Parser();
+
+                        parser.ElementAdded += processKMLMission;
+                        parser.ParseString(kml, false);
+                    }
+                    catch (Exception ex)
+                    {
+                        CustomMessageBox.Show(Strings.Bad_KML_File + ex);
+                    }
+                }
+            }
         }
     }
 }

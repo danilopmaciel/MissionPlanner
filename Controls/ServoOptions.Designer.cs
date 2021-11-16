@@ -56,6 +56,7 @@
             this.renameToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // renameToolStripMenuItem
             // 
@@ -75,6 +76,7 @@
             // 
             resources.ApplyResources(this.TXT_pwm_low, "TXT_pwm_low");
             this.TXT_pwm_low.Name = "TXT_pwm_low";
+            this.TXT_pwm_low.ReadOnly = true;
             this.TXT_pwm_low.TextChanged += new System.EventHandler(this.TXT_pwm_low_TextChanged);
             // 
             // TXT_pwm_high

@@ -121,7 +121,7 @@
     <value>Simulação</value>
   </data>
   <data name="MenuFlightPlanner.Text" xml:space="preserve">
-    <value>PLANO VOO</value>
+    <value>PLANO DE VOO</value>
   </data>
   <data name="MenuHelp.Text" xml:space="preserve">
     <value>Ajuda</value>
@@ -130,7 +130,7 @@
     <value>Ajuste hardware</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Mission Planner - Por Michael Oborne</value>
+    <value>Mission Planner - XFLY</value>
   </data>
   <data name="connectionOptionsToolStripMenuItem.Text" xml:space="preserve">
     <value>Opções de conexão</value>
@@ -142,7 +142,7 @@
     <value>Soemente ler</value>
   </data>
   <data name="MenuFlightData.Text" xml:space="preserve">
-    <value>DADOS de VOO</value>
+    <value>DADOS DE VOO</value>
   </data>
   <data name="MenuInitConfig.Text" xml:space="preserve">
     <value>AJUSTE INICIAL</value>
@@ -154,7 +154,7 @@
     <value>Planejar voo</value>
   </data>
   <data name="MenuConfigTune.Text" xml:space="preserve">
-    <value>CONFIG/AJUSTE</value>
+    <value>CONFIGURAÇÕES</value>
   </data>
   <data name="MenuFlightData.ToolTipText" xml:space="preserve">
     <value>Dados de voo</value>

@@ -38,7 +38,7 @@ namespace CANLogExtract
             ToolStripItemCollection col = Host.FDMenuMap.Items;
             
             // uncomment to enable
-            col.Add(but);
+            //col.Add(but);
 
             return true;
         }

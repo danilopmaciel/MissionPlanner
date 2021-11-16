@@ -45,7 +45,7 @@ namespace Shortcuts
             but = new ToolStripMenuItem("Fix mission top/bottom");
             but.Click += but_Click;
             ToolStripItemCollection col = Host.FPMenuMap.Items;
-            col.Add(but);
+            //col.Add(but); hide / esconde
             commands =
                 Host.MainForm.FlightPlanner.Controls.Find("Commands", true).FirstOrDefault() as
                     MissionPlanner.Controls.MyDataGridView;

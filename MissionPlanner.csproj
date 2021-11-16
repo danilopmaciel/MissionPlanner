@@ -984,6 +984,9 @@
     <EmbeddedResource Include="Grid\GridUI.ko-KR.resx">
       <DependentUpon>GridUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Grid\GridUI.pt.resx">
+      <DependentUpon>GridUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Joystick\JoystickAxis.resx" />
     <EmbeddedResource Include="Log\LogStrings.resx">
       <DependentUpon>LogStrings.cs</DependentUpon>
@@ -1717,6 +1720,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.pt.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainV2.ru-KZ.resx">
       <DependentUpon>MainV2.cs</DependentUpon>
@@ -2297,12 +2301,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.ko-KR.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.pl.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.pt.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="GCSViews\FlightData.ru-KZ.resx">
       <DependentUpon>FlightData.cs</DependentUpon>
@@ -4573,6 +4579,7 @@
     <Content Include="quaternion.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\logo_xfly_21.png" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

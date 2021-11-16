@@ -175,7 +175,7 @@
     <value>Localização Home</value>
   </data>
   <data name="BUT_loadwpfile.Text" xml:space="preserve">
-    <value>Carregar arquivo de WPT</value>
+    <value>Abrir arquivo</value>
   </data>
   <data name="loadWPFileToolStripMenuItem.Text" xml:space="preserve">
     <value>Carregar arquivo de WPT</value>
@@ -184,7 +184,7 @@
     <value>Inicio</value>
   </data>
   <data name="BUT_read.Text" xml:space="preserve">
-    <value>Ler WPT</value>
+    <value>Ler do Drone</value>
   </data>
   <data name="loadPolygonToolStripMenuItem.Text" xml:space="preserve">
     <value>Carregar poligono</value>
@@ -223,7 +223,7 @@
     <value>Decolar</value>
   </data>
   <data name="addPolygonPointToolStripMenuItem.Text" xml:space="preserve">
-    <value>Adicionar ponto no poligono</value>
+    <value>Desenhar Polígono</value>
   </data>
   <data name="lbl_distance.Text" xml:space="preserve">
     <value>Distancia</value>
@@ -232,7 +232,7 @@
     <value>Mover proxima linha</value>
   </data>
   <data name="BUT_write.Text" xml:space="preserve">
-    <value>Escrever WPs</value>
+    <value>Gravar no Drone</value>
   </data>
   <data name="modifyAltToolStripMenuItem.Text" xml:space="preserve">
     <value>Modificar Alt</value>
@@ -301,7 +301,7 @@
     <value>Limpar pontos do raly</value>
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>Complexo</value>
+    <value>Plano de Voo</value>
   </data>
   <data name="savePolygonToolStripMenuItem.Text" xml:space="preserve">
     <value>Salvar poligono</value>
@@ -332,5 +332,17 @@
   </data>
   <data name="Angle.HeaderText" xml:space="preserve">
     <value>Angulo</value>
+  </data>
+  <data name="surveyGridToolStripMenuItem.Text" xml:space="preserve">
+    <value>Linhas de Voo</value>
+  </data>
+  <data name="BUT_saveWPFile.Text" xml:space="preserve">
+    <value>Salvar arquivo</value>
+  </data>
+  <data name="deleteWPToolStripMenuItem.Text" xml:space="preserve">
+    <value>Deletar ponto</value>
+  </data>
+  <data name="openKMLToolStripMenuItem.Text" xml:space="preserve">
+    <value>Abrir KML</value>
   </data>
 </root>

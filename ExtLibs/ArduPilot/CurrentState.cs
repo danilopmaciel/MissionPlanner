@@ -334,7 +334,7 @@ namespace MissionPlanner
         [GroupText("Position")]
         public float gpshdop { get; set; }
 
-        [DisplayText("Sat Count")]
+        [DisplayText("GPS 1")]
         [GroupText("Position")]
         public float satcount { get; set; }
 
@@ -378,7 +378,7 @@ namespace MissionPlanner
         [GroupText("Position")]
         public float gpshdop2 { get; set; }
 
-        [DisplayText("Sat Count2")]
+        [DisplayText("GPS 2")]
         [GroupText("Position")]
         public float satcount2 { get; set; }
 
@@ -417,7 +417,7 @@ namespace MissionPlanner
         public float asratio { get; set; }
 
         [GroupText("Position")]
-        [DisplayText("GroundSpeed (speed)")]
+        [DisplayText("Velocidade (speed)")]
         public float groundspeed
         {
             get => _groundspeed * multiplierspeed;
@@ -975,7 +975,7 @@ namespace MissionPlanner
         }
 
         [GroupText("Battery")]
-        [DisplayText("Bat Voltage (V)")]
+        [DisplayText("Tenção (V)")]
         public double battery_voltage3 { get; set; }
 
         [GroupText("Battery")]
@@ -1047,7 +1047,7 @@ namespace MissionPlanner
         public int battery_remaining9 { get; set; }
 
         [GroupText("Battery")]
-        [DisplayText("Bat Current (Amps)")]
+        [DisplayText("Corrente (A)")]
         public double current
         {
             get => _current;

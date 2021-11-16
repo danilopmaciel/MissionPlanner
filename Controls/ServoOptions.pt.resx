@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BUT_Low.Text" xml:space="preserve">
-    <value>Baixo</value>
+    <value>Desliga</value>
   </data>
   <data name="BUT_Repeat.Text" xml:space="preserve">
     <value>Trocar</value>
@@ -127,6 +127,6 @@
     <value>Renomear</value>
   </data>
   <data name="BUT_High.Text" xml:space="preserve">
-    <value>ALto</value>
+    <value>Liga</value>
   </data>
 </root>
