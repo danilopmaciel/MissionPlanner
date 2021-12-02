@@ -43,32 +43,32 @@ namespace MissionPlanner.GeoRef
             this.num_hfov = new System.Windows.Forms.NumericUpDown();
             this.num_vfov = new System.Windows.Forms.NumericUpDown();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.chk_trigusergpsalt = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.chk_camusegpsalt = new System.Windows.Forms.CheckBox();
+            this.num_dropend = new System.Windows.Forms.NumericUpDown();
             this.lbldrpstart = new System.Windows.Forms.Label();
             this.num_dropfromstart = new System.Windows.Forms.NumericUpDown();
             this.chk_usegps2 = new System.Windows.Forms.CheckBox();
+            this.chk_cammsg = new System.Windows.Forms.CheckBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txt_basealt = new System.Windows.Forms.TextBox();
             this.CHECK_AMSLAlt_Use = new System.Windows.Forms.CheckBox();
             this.PANEL_SHUTTER_LAG = new System.Windows.Forms.Panel();
             this.TXT_shutterLag = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.chk_cammsg = new System.Windows.Forms.CheckBox();
             this.RDIO_trigmsg = new System.Windows.Forms.RadioButton();
             this.myGMAP1 = new MissionPlanner.Controls.myGMAP();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.chk_camusegpsalt = new System.Windows.Forms.CheckBox();
-            this.chk_trigusergpsalt = new System.Windows.Forms.CheckBox();
-            this.num_dropend = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
             this.PANEL_TIME_OFFSET.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.num_camerarotation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_hfov)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_vfov)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_dropend)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_dropfromstart)).BeginInit();
             this.PANEL_SHUTTER_LAG.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_dropend)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -247,22 +247,53 @@ namespace MissionPlanner.GeoRef
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.chk_trigusergpsalt);
             this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.chk_camusegpsalt);
             this.panel3.Controls.Add(this.num_dropend);
             this.panel3.Controls.Add(this.lbldrpstart);
             this.panel3.Controls.Add(this.num_dropfromstart);
             this.panel3.Controls.Add(this.chk_usegps2);
+            this.panel3.Controls.Add(this.chk_cammsg);
             this.panel3.Controls.Add(this.label28);
             this.panel3.Controls.Add(this.txt_basealt);
             this.panel3.Controls.Add(this.CHECK_AMSLAlt_Use);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.RDIO_TimeOffset);
             this.panel3.Controls.Add(this.num_vfov);
             this.panel3.Controls.Add(this.num_camerarotation);
             this.panel3.Controls.Add(this.num_hfov);
             this.panel3.Controls.Add(this.label7);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
+            // 
+            // chk_trigusergpsalt
+            // 
+            resources.ApplyResources(this.chk_trigusergpsalt, "chk_trigusergpsalt");
+            this.chk_trigusergpsalt.Name = "chk_trigusergpsalt";
+            this.chk_trigusergpsalt.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // chk_camusegpsalt
+            // 
+            resources.ApplyResources(this.chk_camusegpsalt, "chk_camusegpsalt");
+            this.chk_camusegpsalt.Name = "chk_camusegpsalt";
+            this.chk_camusegpsalt.UseVisualStyleBackColor = true;
+            // 
+            // num_dropend
+            // 
+            resources.ApplyResources(this.num_dropend, "num_dropend");
+            this.num_dropend.Maximum = new decimal(new int[] {
+            900,
+            0,
+            0,
+            0});
+            this.num_dropend.Name = "num_dropend";
             // 
             // lbldrpstart
             // 
@@ -285,6 +316,13 @@ namespace MissionPlanner.GeoRef
             this.chk_usegps2.Name = "chk_usegps2";
             this.chk_usegps2.UseVisualStyleBackColor = true;
             this.chk_usegps2.CheckedChanged += new System.EventHandler(this.chk_usegps2_CheckedChanged);
+            // 
+            // chk_cammsg
+            // 
+            resources.ApplyResources(this.chk_cammsg, "chk_cammsg");
+            this.chk_cammsg.Name = "chk_cammsg";
+            this.chk_cammsg.UseVisualStyleBackColor = true;
+            this.chk_cammsg.CheckedChanged += new System.EventHandler(this.chk_cammsg_CheckedChanged);
             // 
             // label28
             // 
@@ -324,13 +362,6 @@ namespace MissionPlanner.GeoRef
             resources.ApplyResources(this.label27, "label27");
             this.label27.Name = "label27";
             // 
-            // chk_cammsg
-            // 
-            resources.ApplyResources(this.chk_cammsg, "chk_cammsg");
-            this.chk_cammsg.Name = "chk_cammsg";
-            this.chk_cammsg.UseVisualStyleBackColor = true;
-            this.chk_cammsg.CheckedChanged += new System.EventHandler(this.chk_cammsg_CheckedChanged);
-            // 
             // RDIO_trigmsg
             // 
             resources.ApplyResources(this.RDIO_trigmsg, "RDIO_trigmsg");
@@ -368,53 +399,22 @@ namespace MissionPlanner.GeoRef
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
-            // chk_camusegpsalt
-            // 
-            resources.ApplyResources(this.chk_camusegpsalt, "chk_camusegpsalt");
-            this.chk_camusegpsalt.Name = "chk_camusegpsalt";
-            this.chk_camusegpsalt.UseVisualStyleBackColor = true;
-            // 
-            // chk_trigusergpsalt
-            // 
-            resources.ApplyResources(this.chk_trigusergpsalt, "chk_trigusergpsalt");
-            this.chk_trigusergpsalt.Name = "chk_trigusergpsalt";
-            this.chk_trigusergpsalt.UseVisualStyleBackColor = true;
-            // 
-            // num_dropend
-            // 
-            resources.ApplyResources(this.num_dropend, "num_dropend");
-            this.num_dropend.Maximum = new decimal(new int[] {
-            900,
-            0,
-            0,
-            0});
-            this.num_dropend.Name = "num_dropend";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
             // Georefimage
             // 
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.chk_trigusergpsalt);
-            this.Controls.Add(this.chk_camusegpsalt);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.myGMAP1);
             this.Controls.Add(this.RDIO_trigmsg);
-            this.Controls.Add(this.chk_cammsg);
+            this.Controls.Add(this.BUT_doit);
+            this.Controls.Add(this.BUT_Geotagimages);
             this.Controls.Add(this.PANEL_SHUTTER_LAG);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.PANEL_TIME_OFFSET);
             this.Controls.Add(this.RDIO_CAMMsgSynchro);
-            this.Controls.Add(this.RDIO_TimeOffset);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.BUT_networklinkgeoref);
-            this.Controls.Add(this.BUT_Geotagimages);
             this.Controls.Add(this.TXT_outputlog);
-            this.Controls.Add(this.BUT_doit);
             this.Controls.Add(this.TXT_jpgdir);
             this.Controls.Add(this.TXT_logfile);
             this.Controls.Add(this.BUT_browsedir);
@@ -427,11 +427,11 @@ namespace MissionPlanner.GeoRef
             ((System.ComponentModel.ISupportInitialize)(this.num_vfov)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_dropend)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_dropfromstart)).EndInit();
             this.PANEL_SHUTTER_LAG.ResumeLayout(false);
             this.PANEL_SHUTTER_LAG.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_dropend)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

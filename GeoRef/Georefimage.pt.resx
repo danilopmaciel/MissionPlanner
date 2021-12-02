@@ -142,7 +142,7 @@
     <value>Localização Kml</value>
   </data>
   <data name="RDIO_CAMMsgSynchro.Text" xml:space="preserve">
-    <value>Sincro mensagem CAM (somente DF Log)</value>
+    <value>Ativar Disparo do Drone</value>
   </data>
   <data name="RDIO_TimeOffset.Text" xml:space="preserve">
     <value>Desvio de tempo</value>
@@ -151,7 +151,7 @@
     <value>Imagens GeoTag</value>
   </data>
   <data name="RDIO_trigmsg.Text" xml:space="preserve">
-    <value>Disparar mensagem</value>
+    <value>Retorno da Câmera</value>
   </data>
   <data name="BUT_estoffset.Text" xml:space="preserve">
     <value>Desvio estimado</value>

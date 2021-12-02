@@ -5315,5 +5315,10 @@ namespace MissionPlanner.GCSViews
         {
 
         }
+
+        private void quickView1_PaintSurface(object sender, SkiaSharp.Views.Desktop.SKPaintSurfaceEventArgs e)
+        {
+
+        }
     }
 }
