@@ -241,7 +241,7 @@
     <value>Abaixo</value>
   </data>
   <data name="polygonToolStripMenuItem.Text" xml:space="preserve">
-    <value>Desenhar poligono</value>
+    <value>Poligono</value>
   </data>
   <data name="createSplineCircleToolStripMenuItem.Text" xml:space="preserve">
     <value>Criar espinha em circulo</value>
@@ -280,7 +280,7 @@
     <value>Apagar</value>
   </data>
   <data name="setHomeHereToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ajuste Home aqui</value>
+    <value>Definir ponto de decolagem</value>
   </data>
   <data name="loitercirclesToolStripMenuItem.Text" xml:space="preserve">
     <value>Circulos</value>
@@ -316,7 +316,7 @@
     <value>Editar</value>
   </data>
   <data name="fromSHPToolStripMenuItem.Text" xml:space="preserve">
-    <value>do SHP</value>
+    <value>Importar .SHP</value>
   </data>
   <data name="Down.HeaderText" xml:space="preserve">
     <value>Abaixo</value>
@@ -344,5 +344,23 @@
   </data>
   <data name="openKMLToolStripMenuItem.Text" xml:space="preserve">
     <value>Abrir KML</value>
+  </data>
+  <data name="s1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="addPolygonPointToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Desenhar</value>
+  </data>
+  <data name="areaToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Área</value>
+  </data>
+  <data name="clearPolygonToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Limpar</value>
+  </data>
+  <data name="drawAPolygonToolStripMenuItem.Text" xml:space="preserve">
+    <value>Desenhar</value>
+  </data>
+  <data name="fromSHPToolStripMenuItem2.Text" xml:space="preserve">
+    <value>Abrir SHP</value>
   </data>
 </root>

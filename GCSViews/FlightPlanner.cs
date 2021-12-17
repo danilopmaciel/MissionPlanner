@@ -52,6 +52,7 @@ using Resources = MissionPlanner.Properties.Resources;
 
 namespace MissionPlanner.GCSViews
 {
+
     public partial class FlightPlanner : MyUserControl, IDeactivate, IActivate
     {
         public FlightPlanner()
@@ -2579,18 +2580,19 @@ namespace MissionPlanner.GCSViews
         {
             //a visibilidade desses botoes sao alterados em o utros lugares por isso estão sendo escondidos aqui
             
-            polygonToolStripMenuItem.Visible = false;
+            polygonToolStripMenuItem.Visible = true;
             geoFenceToolStripMenuItem.Visible = false;
             rallyPointsToolStripMenuItem.Visible = false;
             mapToolToolStripMenuItem.Visible = false;
             pOIToolStripMenuItem.Visible = false;
-            trackerHomeToolStripMenuItem.Visible = false;
+            trackerHomeToolStripMenuItem.Visible = false; // nao funciona
             createWpCircleToolStripMenuItem.Visible = false;
             createSplineCircleToolStripMenuItem.Visible = false;
             areaToolStripMenuItem.Visible = false;
             textToolStripMenuItem.Visible = false;
             createCircleSurveyToolStripMenuItem.Visible = false;
             surveyGridToolStripMenuItem.Visible = false;
+                        
 
             if (CurentRectMarker == null && CurrentRallyPt == null && groupmarkers.Count == 0)
             {
@@ -3050,7 +3052,7 @@ namespace MissionPlanner.GCSViews
                     catch (Exception ex)
                     {
                         log.Error(ex);
-                        CustomMessageBox.Show("Remove point Failed. Please try again.");
+                        CustomMessageBox.Show("Falha ao remover ponto.");//("Remove point Failed. Please try again.");
                     }
                 }
             }
@@ -3072,7 +3074,7 @@ namespace MissionPlanner.GCSViews
                     catch (Exception ex)
                     {
                         log.Error(ex);
-                        CustomMessageBox.Show("error selecting wp, please try again.");
+                        CustomMessageBox.Show("Erro ao selecionar wp.");//("error selecting wp, please try again.");
                     }
                 }
 
@@ -3330,6 +3332,7 @@ namespace MissionPlanner.GCSViews
             config(false);
 
             quickadd = false;
+
 
             POI.POIModified += POI_POIModified;
 

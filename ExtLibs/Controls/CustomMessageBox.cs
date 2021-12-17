@@ -34,7 +34,7 @@ namespace MissionPlanner.MsgBox
             return Show(text, caption, buttons, MessageBoxIcon.None);
         }
 
-        public static DialogResult Show(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon, string YesText = "Yes", string NoText = "No")
+        public static DialogResult Show(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon, string YesText = "Sim", string NoText = "Não") // traduzido
         {
             DialogResult answer = DialogResult.Cancel;
 
@@ -69,7 +69,7 @@ namespace MissionPlanner.MsgBox
             return answer;
         }
 
-        static DialogResult ShowUI(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon, string YesText = "Yes", string NoText = "No")
+        static DialogResult ShowUI(string text, string caption, MessageBoxButtons buttons, MessageBoxIcon icon, string YesText = "Sim", string NoText = "Não")//traduzido
         {
             DialogResult answer = DialogResult.Abort;
 
@@ -241,7 +241,7 @@ namespace MissionPlanner.MsgBox
             return sb.ToString();
         }
 
-        private static void AddButtonsToForm(Form msgBoxFrm, MessageBoxButtons buttons, string YesText = "Yes", string NoText = "No")
+        private static void AddButtonsToForm(Form msgBoxFrm, MessageBoxButtons buttons, string YesText = "Sim", string NoText = "Não")//traduzido
         {
             Rectangle screenRectangle = msgBoxFrm.RectangleToScreen(msgBoxFrm.ClientRectangle);
             int titleHeight = screenRectangle.Top - msgBoxFrm.Top;
