@@ -1705,7 +1705,7 @@
     <value>70</value>
   </data>
   <data name="BUT_samplephoto.Text" xml:space="preserve">
-    <value>Load Sample Photo</value>
+    <value>Carregar Foto</value>
   </data>
   <data name="label21.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1975,7 +1975,7 @@
     <value>45</value>
   </data>
   <data name="BUT_save.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Salvar</value>
   </data>
   <data name="groupBoxSpiral.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Right</value>
@@ -2728,7 +2728,7 @@
     <value>65</value>
   </data>
   <data name="chk_Corridor.Text" xml:space="preserve">
-    <value>Corridor</value>
+    <value>Corredor</value>
   </data>
   <data name="&gt;&gt;chk_Corridor.Name" xml:space="preserve">
     <value>chk_Corridor</value>
@@ -2758,7 +2758,7 @@
     <value>63</value>
   </data>
   <data name="label43.Text" xml:space="preserve">
-    <value>Corridor Width [m]</value>
+    <value>Largura do Corredor [m]</value>
   </data>
   <data name="&gt;&gt;label43.Name" xml:space="preserve">
     <value>label43</value>
@@ -2809,7 +2809,7 @@
     <value>62</value>
   </data>
   <data name="chk_crossgrid.Text" xml:space="preserve">
-    <value>Cross Grid</value>
+    <value>Grid Cruzado</value>
   </data>
   <data name="&gt;&gt;chk_crossgrid.Name" xml:space="preserve">
     <value>chk_crossgrid</value>
@@ -3073,7 +3073,7 @@
     <value>9</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>OverShoot [m]</value>
+    <value>Margem de saida [m]</value>
   </data>
   <data name="label5.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3584,7 +3584,7 @@ Control-O to load form file</value>
     <value>22</value>
   </data>
   <data name="BUT_Accept.Text" xml:space="preserve">
-    <value>Accept</value>
+    <value>Aceitar</value>
   </data>
   <data name="&gt;&gt;BUT_Accept.Name" xml:space="preserve">
     <value>BUT_Accept</value>
@@ -3872,7 +3872,7 @@ Control-O to load form file</value>
     <value>4</value>
   </data>
   <data name="CHK_footprints.Text" xml:space="preserve">
-    <value>Pegadas</value>
+    <value>Marcas</value>
   </data>
   <data name="CHK_internals.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3908,7 +3908,7 @@ Control-O to load form file</value>
     <value>2</value>
   </data>
   <data name="CHK_grid.Text" xml:space="preserve">
-    <value>Linhas de voo</value>
+    <value>Linhas</value>
   </data>
   <data name="CHK_markers.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4041,5 +4041,8 @@ Control-O to load form file</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="string1" xml:space="preserve">
+    <value />
   </data>
 </root>
