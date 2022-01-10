@@ -493,7 +493,7 @@
     <value>24</value>
   </data>
   <data name="label44.Text" xml:space="preserve">
-    <value>Shutter minimo:</value>
+    <value>Min Shutter Speed:</value>
   </data>
   <data name="lbl_gndelev.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -529,7 +529,7 @@
     <value>22</value>
   </data>
   <data name="label40.Text" xml:space="preserve">
-    <value>Revolução do Solo:</value>
+    <value>Ground Elevation:</value>
   </data>
   <data name="lbl_turnrad.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -565,7 +565,7 @@
     <value>20</value>
   </data>
   <data name="label36.Text" xml:space="preserve">
-    <value>Turno Dia (at 45d):</value>
+    <value>Turn Dia (at 45d):</value>
   </data>
   <data name="lbl_photoevery.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -601,7 +601,7 @@
     <value>18</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
-    <value>Foto a cada (est):</value>
+    <value>Photo every (est):</value>
   </data>
   <data name="lbl_flighttime.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -637,7 +637,7 @@
     <value>16</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
-    <value>Tempo de voo (est):</value>
+    <value>Flight Time (est):</value>
   </data>
   <data name="lbl_distbetweenlines.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -673,7 +673,7 @@
     <value>14</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
-    <value>Dist entre linhas:</value>
+    <value>Dist between lines:</value>
   </data>
   <data name="lbl_footprint.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -709,7 +709,7 @@
     <value>12</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
-    <value>Projeção:</value>
+    <value>Footprint:</value>
   </data>
   <data name="lbl_strips.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -763,7 +763,7 @@
     <value>9</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
-    <value>N° de lihas:</value>
+    <value>No of Strips:</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -781,7 +781,7 @@
     <value>8</value>
   </data>
   <data name="label34.Text" xml:space="preserve">
-    <value>Fotos:</value>
+    <value>Pictures:</value>
   </data>
   <data name="lbl_grndres.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -817,7 +817,7 @@
     <value>6</value>
   </data>
   <data name="label29.Text" xml:space="preserve">
-    <value>Revolução do Solo:</value>
+    <value>Ground Resolution: </value>
   </data>
   <data name="lbl_spacing.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -853,7 +853,7 @@
     <value>4</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
-    <value>Dist entre images: </value>
+    <value>Dist between images: </value>
   </data>
   <data name="lbl_distance.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -907,7 +907,7 @@
     <value>1</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
-    <value>Distância:</value>
+    <value>Distance: </value>
   </data>
   <data name="label22.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -925,7 +925,7 @@
     <value>0</value>
   </data>
   <data name="label22.Text" xml:space="preserve">
-    <value>Área em m²: </value>
+    <value>Area: </value>
   </data>
   <data name="&gt;&gt;label42.Name" xml:space="preserve">
     <value>label42</value>
@@ -3265,8 +3265,8 @@
     <value>22</value>
   </data>
   <data name="label38.Text" xml:space="preserve">
-    <value>Ctrl+S salvar arquivo
-Ctrl+O carregar arquivo</value>
+    <value>Control-S to save to file
+Control-O to load form file</value>
   </data>
   <data name="&gt;&gt;label38.Name" xml:space="preserve">
     <value>label38</value>
@@ -3872,7 +3872,7 @@ Ctrl+O carregar arquivo</value>
     <value>4</value>
   </data>
   <data name="CHK_footprints.Text" xml:space="preserve">
-    <value>Projeção</value>
+    <value>Marcas</value>
   </data>
   <data name="CHK_internals.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3890,7 +3890,7 @@ Ctrl+O carregar arquivo</value>
     <value>3</value>
   </data>
   <data name="CHK_internals.Text" xml:space="preserve">
-    <value>Marcas</value>
+    <value>Internals</value>
   </data>
   <data name="CHK_grid.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4044,11 +4044,5 @@ Ctrl+O carregar arquivo</value>
   </data>
   <data name="string1" xml:space="preserve">
     <value />
-  </data>
-  <data name="String2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label47.text" xml:space="preserve">
-    <value>Área em ha:</value>
   </data>
 </root>

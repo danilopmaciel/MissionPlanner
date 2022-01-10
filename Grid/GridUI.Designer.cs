@@ -58,8 +58,12 @@
             this.label22 = new System.Windows.Forms.Label();
             this.tabCamera = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.num_setservono = new System.Windows.Forms.NumericUpDown();
             this.label41 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
+            this.num_setservolow = new System.Windows.Forms.NumericUpDown();
+            this.num_setservohigh = new System.Windows.Forms.NumericUpDown();
             this.rad_do_set_servo = new System.Windows.Forms.RadioButton();
             this.chk_stopstart = new System.Windows.Forms.CheckBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -71,10 +75,6 @@
             this.rad_digicam = new System.Windows.Forms.RadioButton();
             this.rad_repeatservo = new System.Windows.Forms.RadioButton();
             this.rad_trigdist = new System.Windows.Forms.RadioButton();
-            this.label42 = new System.Windows.Forms.Label();
-            this.num_setservono = new System.Windows.Forms.NumericUpDown();
-            this.num_setservolow = new System.Windows.Forms.NumericUpDown();
-            this.num_setservohigh = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.BUT_samplephoto = new MissionPlanner.Controls.MyButton();
             this.label21 = new System.Windows.Forms.Label();
@@ -120,8 +120,6 @@
             this.NUM_spacing = new System.Windows.Forms.NumericUpDown();
             this.chk_spline = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label45 = new System.Windows.Forms.Label();
-            this.DistMarcas = new System.Windows.Forms.NumericUpDown();
             this.NUM_leadin2 = new System.Windows.Forms.NumericUpDown();
             this.chk_spiral = new System.Windows.Forms.CheckBox();
             this.chk_Corridor = new System.Windows.Forms.CheckBox();
@@ -142,18 +140,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.NUM_Distance = new System.Windows.Forms.NumericUpDown();
             this.tabSimple = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.CHK_advanced = new System.Windows.Forms.CheckBox();
-            this.CHK_footprints = new System.Windows.Forms.CheckBox();
-            this.CHK_internals = new System.Windows.Forms.CheckBox();
-            this.CHK_grid = new System.Windows.Forms.CheckBox();
-            this.CHK_markers = new System.Windows.Forms.CheckBox();
-            this.CHK_boundary = new System.Windows.Forms.CheckBox();
-            this.DispenserGrouBox = new System.Windows.Forms.GroupBox();
-            this.num_setservolow2 = new System.Windows.Forms.NumericUpDown();
-            this.num_setservono2 = new System.Windows.Forms.NumericUpDown();
-            this.Servo = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.CHK_Tubete = new System.Windows.Forms.CheckBox();
             this.CHK_fotogrametria = new System.Windows.Forms.CheckBox();
             this.CHK_dispenser = new System.Windows.Forms.CheckBox();
@@ -173,21 +159,31 @@
             this.CHK_camdirection = new System.Windows.Forms.CheckBox();
             this.NUM_altitude = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.CHK_advanced = new System.Windows.Forms.CheckBox();
+            this.CHK_footprints = new System.Windows.Forms.CheckBox();
+            this.CHK_internals = new System.Windows.Forms.CheckBox();
+            this.CHK_grid = new System.Windows.Forms.CheckBox();
+            this.CHK_markers = new System.Windows.Forms.CheckBox();
+            this.CHK_boundary = new System.Windows.Forms.CheckBox();
             this.BUT_Accept = new MissionPlanner.Controls.MyButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TRK_zoom = new MissionPlanner.Controls.MyTrackBar();
             this.map = new MissionPlanner.Controls.myGMAP();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
+            this.DispenserGrouBox = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Servo = new System.Windows.Forms.Label();
+            this.num_setservono2 = new System.Windows.Forms.NumericUpDown();
+            this.num_setservolow2 = new System.Windows.Forms.NumericUpDown();
             this.groupBox5.SuspendLayout();
             this.tabCamera.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_repttime)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_reptpwm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_reptservo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservono)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservolow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservohigh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_repttime)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_reptpwm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_reptservo)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_focallength)).BeginInit();
             this.tabGrid.SuspendLayout();
@@ -199,7 +195,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_copter_delay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DistMarcas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_corridorwidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin)).BeginInit();
@@ -209,23 +204,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_overshoot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).BeginInit();
             this.tabSimple.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.DispenserGrouBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_setservolow2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_setservono2)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_split)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlySpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_angle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_altitude)).BeginInit();
+            this.groupBox4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).BeginInit();
+            this.DispenserGrouBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_setservono2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_setservolow2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.label48);
-            this.groupBox5.Controls.Add(this.label47);
             this.groupBox5.Controls.Add(this.lbl_minshutter);
             this.groupBox5.Controls.Add(this.label44);
             this.groupBox5.Controls.Add(this.lbl_gndelev);
@@ -412,6 +405,32 @@
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
+            // label42
+            // 
+            resources.ApplyResources(this.label42, "label42");
+            this.label42.Name = "label42";
+            // 
+            // num_setservono
+            // 
+            resources.ApplyResources(this.num_setservono, "num_setservono");
+            this.num_setservono.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.num_setservono.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.num_setservono.Name = "num_setservono";
+            this.num_setservono.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.num_setservono.ValueChanged += new System.EventHandler(this.num_setservono_ValueChanged);
+            // 
             // label41
             // 
             resources.ApplyResources(this.label41, "label41");
@@ -421,6 +440,36 @@
             // 
             resources.ApplyResources(this.label39, "label39");
             this.label39.Name = "label39";
+            // 
+            // num_setservolow
+            // 
+            resources.ApplyResources(this.num_setservolow, "num_setservolow");
+            this.num_setservolow.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.num_setservolow.Name = "num_setservolow";
+            this.num_setservolow.Value = new decimal(new int[] {
+            1100,
+            0,
+            0,
+            0});
+            // 
+            // num_setservohigh
+            // 
+            resources.ApplyResources(this.num_setservohigh, "num_setservohigh");
+            this.num_setservohigh.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.num_setservohigh.Name = "num_setservohigh";
+            this.num_setservohigh.Value = new decimal(new int[] {
+            1500,
+            0,
+            0,
+            0});
             // 
             // rad_do_set_servo
             // 
@@ -529,62 +578,6 @@
             this.rad_trigdist.TabStop = true;
             this.rad_trigdist.Tag = "";
             this.rad_trigdist.UseVisualStyleBackColor = true;
-            // 
-            // label42
-            // 
-            resources.ApplyResources(this.label42, "label42");
-            this.label42.Name = "label42";
-            // 
-            // num_setservono
-            // 
-            resources.ApplyResources(this.num_setservono, "num_setservono");
-            this.num_setservono.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.num_setservono.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.num_setservono.Name = "num_setservono";
-            this.num_setservono.Value = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.num_setservono.ValueChanged += new System.EventHandler(this.num_setservono_ValueChanged);
-            // 
-            // num_setservolow
-            // 
-            resources.ApplyResources(this.num_setservolow, "num_setservolow");
-            this.num_setservolow.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.num_setservolow.Name = "num_setservolow";
-            this.num_setservolow.Value = new decimal(new int[] {
-            1100,
-            0,
-            0,
-            0});
-            // 
-            // num_setservohigh
-            // 
-            resources.ApplyResources(this.num_setservohigh, "num_setservohigh");
-            this.num_setservohigh.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.num_setservohigh.Name = "num_setservohigh";
-            this.num_setservohigh.Value = new decimal(new int[] {
-            1500,
-            0,
-            0,
-            0});
             // 
             // groupBox2
             // 
@@ -935,8 +928,6 @@
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.label45);
-            this.groupBox1.Controls.Add(this.DistMarcas);
             this.groupBox1.Controls.Add(this.chk_spline);
             this.groupBox1.Controls.Add(this.NUM_leadin2);
             this.groupBox1.Controls.Add(this.chk_spiral);
@@ -959,32 +950,6 @@
             this.groupBox1.Controls.Add(this.NUM_Distance);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            // 
-            // label45
-            // 
-            resources.ApplyResources(this.label45, "label45");
-            this.label45.Name = "label45";
-            // 
-            // DistMarcas
-            // 
-            resources.ApplyResources(this.DistMarcas, "DistMarcas");
-            this.DistMarcas.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.DistMarcas.Minimum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            -2147483648});
-            this.DistMarcas.Name = "DistMarcas";
-            this.DistMarcas.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.DistMarcas.ValueChanged += new System.EventHandler(this.DistMarcas_ValueChanged);
             // 
             // NUM_leadin2
             // 
@@ -1185,7 +1150,6 @@
             // 
             // tabSimple
             // 
-            this.tabSimple.Controls.Add(this.groupBox4);
             this.tabSimple.Controls.Add(this.DispenserGrouBox);
             this.tabSimple.Controls.Add(this.CHK_Tubete);
             this.tabSimple.Controls.Add(this.CHK_fotogrametria);
@@ -1194,132 +1158,12 @@
             this.tabSimple.Controls.Add(this.label38);
             this.tabSimple.Controls.Add(this.groupBox1);
             this.tabSimple.Controls.Add(this.groupBox6);
+            this.tabSimple.Controls.Add(this.groupBox4);
             this.tabSimple.Controls.Add(this.BUT_Accept);
             resources.ApplyResources(this.tabSimple, "tabSimple");
             this.tabSimple.Name = "tabSimple";
             this.tabSimple.UseVisualStyleBackColor = true;
             this.tabSimple.Paint += new System.Windows.Forms.PaintEventHandler(this.tabSimple_Paint);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.CHK_advanced);
-            this.groupBox4.Controls.Add(this.CHK_footprints);
-            this.groupBox4.Controls.Add(this.CHK_internals);
-            this.groupBox4.Controls.Add(this.CHK_grid);
-            this.groupBox4.Controls.Add(this.CHK_markers);
-            this.groupBox4.Controls.Add(this.CHK_boundary);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.TabStop = false;
-            // 
-            // CHK_advanced
-            // 
-            resources.ApplyResources(this.CHK_advanced, "CHK_advanced");
-            this.CHK_advanced.Name = "CHK_advanced";
-            this.CHK_advanced.UseVisualStyleBackColor = true;
-            this.CHK_advanced.CheckedChanged += new System.EventHandler(this.CHK_advanced_CheckedChanged);
-            // 
-            // CHK_footprints
-            // 
-            resources.ApplyResources(this.CHK_footprints, "CHK_footprints");
-            this.CHK_footprints.Name = "CHK_footprints";
-            this.CHK_footprints.UseVisualStyleBackColor = true;
-            this.CHK_footprints.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
-            // 
-            // CHK_internals
-            // 
-            resources.ApplyResources(this.CHK_internals, "CHK_internals");
-            this.CHK_internals.Name = "CHK_internals";
-            this.CHK_internals.UseVisualStyleBackColor = true;
-            this.CHK_internals.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
-            // 
-            // CHK_grid
-            // 
-            resources.ApplyResources(this.CHK_grid, "CHK_grid");
-            this.CHK_grid.Checked = true;
-            this.CHK_grid.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CHK_grid.Name = "CHK_grid";
-            this.CHK_grid.UseVisualStyleBackColor = true;
-            this.CHK_grid.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
-            // 
-            // CHK_markers
-            // 
-            resources.ApplyResources(this.CHK_markers, "CHK_markers");
-            this.CHK_markers.Checked = true;
-            this.CHK_markers.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CHK_markers.Name = "CHK_markers";
-            this.CHK_markers.UseVisualStyleBackColor = true;
-            this.CHK_markers.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
-            // 
-            // CHK_boundary
-            // 
-            resources.ApplyResources(this.CHK_boundary, "CHK_boundary");
-            this.CHK_boundary.Checked = true;
-            this.CHK_boundary.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CHK_boundary.Name = "CHK_boundary";
-            this.CHK_boundary.UseVisualStyleBackColor = true;
-            this.CHK_boundary.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
-            // 
-            // DispenserGrouBox
-            // 
-            this.DispenserGrouBox.Controls.Add(this.num_setservolow2);
-            this.DispenserGrouBox.Controls.Add(this.num_setservono2);
-            this.DispenserGrouBox.Controls.Add(this.Servo);
-            this.DispenserGrouBox.Controls.Add(this.label7);
-            this.DispenserGrouBox.Controls.Add(this.label42);
-            this.DispenserGrouBox.Controls.Add(this.num_setservono);
-            this.DispenserGrouBox.Controls.Add(this.num_setservohigh);
-            this.DispenserGrouBox.Controls.Add(this.num_setservolow);
-            resources.ApplyResources(this.DispenserGrouBox, "DispenserGrouBox");
-            this.DispenserGrouBox.Name = "DispenserGrouBox";
-            this.DispenserGrouBox.TabStop = false;
-            // 
-            // num_setservolow2
-            // 
-            resources.ApplyResources(this.num_setservolow2, "num_setservolow2");
-            this.num_setservolow2.Maximum = new decimal(new int[] {
-            5000,
-            0,
-            0,
-            0});
-            this.num_setservolow2.Name = "num_setservolow2";
-            this.num_setservolow2.Value = new decimal(new int[] {
-            1100,
-            0,
-            0,
-            0});
-            this.num_setservolow2.ValueChanged += new System.EventHandler(this.num_setservolow2_ValueChanged);
-            // 
-            // num_setservono2
-            // 
-            resources.ApplyResources(this.num_setservono2, "num_setservono2");
-            this.num_setservono2.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.num_setservono2.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.num_setservono2.Name = "num_setservono2";
-            this.num_setservono2.Value = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.num_setservono2.ValueChanged += new System.EventHandler(this.num_setservono2_ValueChanged);
-            // 
-            // Servo
-            // 
-            resources.ApplyResources(this.Servo, "Servo");
-            this.Servo.Name = "Servo";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
             // 
             // CHK_Tubete
             // 
@@ -1509,6 +1353,66 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.CHK_advanced);
+            this.groupBox4.Controls.Add(this.CHK_footprints);
+            this.groupBox4.Controls.Add(this.CHK_internals);
+            this.groupBox4.Controls.Add(this.CHK_grid);
+            this.groupBox4.Controls.Add(this.CHK_markers);
+            this.groupBox4.Controls.Add(this.CHK_boundary);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.TabStop = false;
+            // 
+            // CHK_advanced
+            // 
+            resources.ApplyResources(this.CHK_advanced, "CHK_advanced");
+            this.CHK_advanced.Name = "CHK_advanced";
+            this.CHK_advanced.UseVisualStyleBackColor = true;
+            this.CHK_advanced.CheckedChanged += new System.EventHandler(this.CHK_advanced_CheckedChanged);
+            // 
+            // CHK_footprints
+            // 
+            resources.ApplyResources(this.CHK_footprints, "CHK_footprints");
+            this.CHK_footprints.Name = "CHK_footprints";
+            this.CHK_footprints.UseVisualStyleBackColor = true;
+            this.CHK_footprints.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
+            // 
+            // CHK_internals
+            // 
+            resources.ApplyResources(this.CHK_internals, "CHK_internals");
+            this.CHK_internals.Name = "CHK_internals";
+            this.CHK_internals.UseVisualStyleBackColor = true;
+            this.CHK_internals.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
+            // 
+            // CHK_grid
+            // 
+            resources.ApplyResources(this.CHK_grid, "CHK_grid");
+            this.CHK_grid.Checked = true;
+            this.CHK_grid.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_grid.Name = "CHK_grid";
+            this.CHK_grid.UseVisualStyleBackColor = true;
+            this.CHK_grid.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
+            // 
+            // CHK_markers
+            // 
+            resources.ApplyResources(this.CHK_markers, "CHK_markers");
+            this.CHK_markers.Checked = true;
+            this.CHK_markers.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_markers.Name = "CHK_markers";
+            this.CHK_markers.UseVisualStyleBackColor = true;
+            this.CHK_markers.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
+            // 
+            // CHK_boundary
+            // 
+            resources.ApplyResources(this.CHK_boundary, "CHK_boundary");
+            this.CHK_boundary.Checked = true;
+            this.CHK_boundary.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CHK_boundary.Name = "CHK_boundary";
+            this.CHK_boundary.UseVisualStyleBackColor = true;
+            this.CHK_boundary.CheckedChanged += new System.EventHandler(this.domainUpDown1_ValueChanged);
+            // 
             // BUT_Accept
             // 
             resources.ApplyResources(this.BUT_Accept, "BUT_Accept");
@@ -1565,15 +1469,66 @@
             this.map.MouseDown += new System.Windows.Forms.MouseEventHandler(this.map_MouseDown);
             this.map.MouseMove += new System.Windows.Forms.MouseEventHandler(this.map_MouseMove);
             // 
-            // label47
+            // DispenserGrouBox
             // 
-            resources.ApplyResources(this.label47, "label47");
-            this.label47.Name = "label47";
+            this.DispenserGrouBox.Controls.Add(this.num_setservolow2);
+            this.DispenserGrouBox.Controls.Add(this.num_setservono2);
+            this.DispenserGrouBox.Controls.Add(this.Servo);
+            this.DispenserGrouBox.Controls.Add(this.label7);
+            this.DispenserGrouBox.Controls.Add(this.label42);
+            this.DispenserGrouBox.Controls.Add(this.num_setservono);
+            this.DispenserGrouBox.Controls.Add(this.num_setservohigh);
+            this.DispenserGrouBox.Controls.Add(this.num_setservolow);
+            resources.ApplyResources(this.DispenserGrouBox, "DispenserGrouBox");
+            this.DispenserGrouBox.Name = "DispenserGrouBox";
+            this.DispenserGrouBox.TabStop = false;
             // 
-            // label48
+            // label7
             // 
-            resources.ApplyResources(this.label48, "label48");
-            this.label48.Name = "label48";
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // Servo
+            // 
+            resources.ApplyResources(this.Servo, "Servo");
+            this.Servo.Name = "Servo";
+            // 
+            // num_setservono2
+            // 
+            resources.ApplyResources(this.num_setservono2, "num_setservono2");
+            this.num_setservono2.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.num_setservono2.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.num_setservono2.Name = "num_setservono2";
+            this.num_setservono2.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.num_setservono2.ValueChanged += new System.EventHandler(this.num_setservono2_ValueChanged);
+            // 
+            // num_setservolow2
+            // 
+            resources.ApplyResources(this.num_setservolow2, "num_setservolow2");
+            this.num_setservolow2.Maximum = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.num_setservolow2.Name = "num_setservolow2";
+            this.num_setservolow2.Value = new decimal(new int[] {
+            1100,
+            0,
+            0,
+            0});
+            this.num_setservolow2.ValueChanged += new System.EventHandler(this.num_setservolow2_ValueChanged);
             // 
             // GridUI
             // 
@@ -1590,12 +1545,12 @@
             this.tabCamera.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_repttime)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_reptpwm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUM_reptservo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservono)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservolow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_setservohigh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_repttime)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_reptpwm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUM_reptservo)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_focallength)).EndInit();
@@ -1613,7 +1568,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_spacing)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DistMarcas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_corridorwidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_leadin)).EndInit();
@@ -1624,20 +1578,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUM_Distance)).EndInit();
             this.tabSimple.ResumeLayout(false);
             this.tabSimple.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.DispenserGrouBox.ResumeLayout(false);
-            this.DispenserGrouBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.num_setservolow2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.num_setservono2)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_split)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_UpDownFlySpeed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_angle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_altitude)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TRK_zoom)).EndInit();
+            this.DispenserGrouBox.ResumeLayout(false);
+            this.DispenserGrouBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.num_setservono2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_setservolow2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1791,9 +1745,5 @@
         private System.Windows.Forms.NumericUpDown num_setservolow2;
         private System.Windows.Forms.NumericUpDown num_setservono2;
         private System.Windows.Forms.Label Servo;
-        private System.Windows.Forms.NumericUpDown DistMarcas;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label47;
     }
 }

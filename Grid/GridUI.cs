@@ -568,8 +568,7 @@ namespace MissionPlanner.Grid
         private async void domainUpDown1_ValueChanged(object sender, EventArgs e)
         {
             NUM_leadin2.Value = NUM_leadin.Value;
-            NUM_overshoot2.Value = NUM_leadin.Value;
-            NUM_overshoot.Value = NUM_leadin.Value;
+            NUM_overshoot2.Value = NUM_overshoot.Value;
             if (loading)
                 return;
 
@@ -829,8 +828,7 @@ namespace MissionPlanner.Grid
             else
             {
                 // Meters
-                lbl_area.Text = calcpolygonarea(list).ToString("#") + " m²";
-                label48.Text = (calcpolygonarea(list)/10000).ToString("#") + " ha";
+                lbl_area.Text = calcpolygonarea(list).ToString("#") + " m^2";
                 lbl_distance.Text = routetotal.ToString("0.##") + " km";
                 lbl_spacing.Text = NUM_spacing.Value.ToString("0.#") + " m";
                 lbl_grndres.Text = TXT_cmpixel.Text;
@@ -1922,16 +1920,13 @@ namespace MissionPlanner.Grid
                 CHK_dispenser.Checked = true;
                 CHK_Tubete.Checked = false;
                 CHK_fotogrametria.Checked = false;
-                CMB_camera.Text = "";
-                CMB_camera_SelectedIndexChanged(null, null);
-                domainUpDown1_ValueChanged(null, null);
 
                 DispenserGrouBox.Visible = true;
                 rad_do_set_servo.Checked = true;
                 NUM_UpDownFlySpeed.Value = 12; // velocidade
                 label32.Visible = true; //leadin
                 NUM_leadin.Visible = true; //margem entrada
-                NUM_overshoot.Visible = false; // margen saida
+                NUM_overshoot.Visible = true; // margen saida
                 NUM_overshoot2.Visible = false;
                 label2.Visible = true;
                 NUM_Distance.Visible = true;
@@ -1939,9 +1934,6 @@ namespace MissionPlanner.Grid
                 num_setservolow.Visible = true;
                 num_setservohigh.Visible = true;
 
-                CHK_internals.Checked = false;
-                DistMarcas.Visible = false;
-                label45.Visible = false;
                 label8.Visible = false;//overlap
                 num_overlap.Visible = false;
                 label15.Visible = false;//sidelap
@@ -1963,12 +1955,6 @@ namespace MissionPlanner.Grid
                 CHK_Tubete.Checked = true;
                 CHK_dispenser.Checked = false;
                 CHK_fotogrametria.Checked = false;
-                CMB_camera.Text = "";
-                CMB_camera_SelectedIndexChanged(null, null);
-                domainUpDown1_ValueChanged(null, null);
-                DistMarcas.Visible = true;
-                label45.Visible = true;
-                label2.Visible = true; //distancia entre linhas
 
                 NUM_UpDownFlySpeed.Value = 10;
                 label32.Visible = false; //leadin
@@ -1982,13 +1968,12 @@ namespace MissionPlanner.Grid
                 CMB_camera.Visible = false;
                 groupBox2.Visible = false;
                 NUM_Distance.Visible = true;
-                DispenserGrouBox.Visible = false;
-                
-                rad_trigdist.Checked = true;
-                chk_stopstart.Checked = true;
-                rad_do_set_servo.Checked = false;
+                label2.Visible = false; //distancia entre linhas
+                rad_trigdist.Checked = false;
+                chk_stopstart.Checked = false;
+                rad_do_set_servo.Checked = true;
                 num_setservono.Value = 12;
-                
+                DispenserGrouBox.Visible = true;
             }
         }
 
@@ -1999,7 +1984,6 @@ namespace MissionPlanner.Grid
                 CHK_fotogrametria.Checked = true;
                 CHK_Tubete.Checked = false;
                 CHK_dispenser.Checked = false;
-                
 
                 NUM_UpDownFlySpeed.Value = 12;
                 label8.Visible = true;//overlap
@@ -2009,9 +1993,8 @@ namespace MissionPlanner.Grid
                 label26.Visible = true;//camera
                 CMB_camera.Visible = true;
                 groupBox2.Visible = true;
+                
 
-                DistMarcas.Visible = false;
-                label45.Visible = false;
                 label32.Visible = false; //leadin - margem de entrada
                 NUM_leadin.Visible = false;
                 NUM_leadin2.Visible = false;
@@ -2044,7 +2027,7 @@ namespace MissionPlanner.Grid
                 label32.Visible = true; //leadin
                 NUM_leadin.Visible = true; // nao usa
                 NUM_leadin2.Visible = false;
-                label5.Visible = false;
+                label5.Visible = true;
                 label8.Visible = false;//overlap
                 num_overlap.Visible =false;
                 label15.Visible = false;//sidelap
@@ -2063,10 +2046,7 @@ namespace MissionPlanner.Grid
                 label42.Visible = true;
                 num_setservolow.Visible = true;
                 num_setservohigh.Visible = true;
-                CHK_internals.Visible = true;
-                CHK_internals.Checked = false;
-                CMB_camera.Text = "";
-                NUM_Distance.Value = 50;
+                
             }
             NUM_altitude.Location = new System.Drawing.Point(174, NUM_altitude.Location.Y);
             NUM_angle.Location = new System.Drawing.Point(174, NUM_angle.Location.Y);
@@ -2079,8 +2059,7 @@ namespace MissionPlanner.Grid
             TXT_fovH.Location = new System.Drawing.Point(174,TXT_fovH.Location.Y);
             TXT_fovV.Location = new System.Drawing.Point(174, TXT_fovV.Location.Y);
             CHK_fotogrametria.Location = new System.Drawing.Point(147, CHK_fotogrametria.Location.Y);
-            //CHK_footprints.Location = new System.Drawing.Point(8, 36);
-            CHK_internals.Location = new System.Drawing.Point(8, 36);
+            CHK_footprints.Location = new System.Drawing.Point(8, 36);
             chk_crossgrid.Location = new System.Drawing.Point(8,103);
             chk_Corridor.Location = new System.Drawing.Point(94, 103);
             label42.Visible = true;
@@ -2096,10 +2075,7 @@ namespace MissionPlanner.Grid
             num_sidelap.Location = new System.Drawing.Point(174,59); // sobreposição lateral
             CMB_startfrom.Location = new System.Drawing.Point(118,80);
             num_corridorwidth.Location = new System.Drawing.Point(174, 119);
-            NUM_copter_delay.Value = 0;
-            chk_spline.Checked = true;
             
-
         }
 
         private void num_setservono_ValueChanged(object sender, EventArgs e)
@@ -2119,11 +2095,6 @@ namespace MissionPlanner.Grid
         private void label5_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void DistMarcas_ValueChanged(object sender, EventArgs e)
-        {
-            NUM_spacing.Value = DistMarcas.Value;
         }
     }
 }
