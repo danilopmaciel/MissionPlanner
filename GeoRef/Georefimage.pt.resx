@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.Text" xml:space="preserve">
-    <value>Imagens Geo ref</value>
+    <value>Georreferenciar Imagens</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
     <value>obturador lag (ms)</value>
@@ -133,27 +133,30 @@
     <value>Use mansagem Cam</value>
   </data>
   <data name="BUT_doit.Text" xml:space="preserve">
-    <value>pre-processo</value>
+    <value>Pré-Processar</value>
   </data>
   <data name="BUT_browsedir.Text" xml:space="preserve">
-    <value>Browse Imagem</value>
+    <value>Abrir imagens</value>
   </data>
   <data name="BUT_networklinkgeoref.Text" xml:space="preserve">
     <value>Localização Kml</value>
   </data>
   <data name="RDIO_CAMMsgSynchro.Text" xml:space="preserve">
-    <value>Ativar Disparo do Drone</value>
+    <value>Utilizar Disparo do Drone</value>
   </data>
   <data name="RDIO_TimeOffset.Text" xml:space="preserve">
     <value>Desvio de tempo</value>
   </data>
   <data name="BUT_Geotagimages.Text" xml:space="preserve">
-    <value>Imagens GeoTag</value>
+    <value>Inserir Coordenadas</value>
   </data>
   <data name="RDIO_trigmsg.Text" xml:space="preserve">
-    <value>Retorno da Câmera</value>
+    <value>Utilizar Retorno da Câmera</value>
   </data>
   <data name="BUT_estoffset.Text" xml:space="preserve">
     <value>Desvio estimado</value>
+  </data>
+  <data name="BUT_browselog.Text" xml:space="preserve">
+    <value>Abrir Log</value>
   </data>
 </root>

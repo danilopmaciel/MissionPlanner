@@ -172,7 +172,8 @@
     <value>Relativo</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Localização Home</value>
+    <value>Atualizar ponto
+de decolagem</value>
   </data>
   <data name="BUT_loadwpfile.Text" xml:space="preserve">
     <value>Abrir arquivo</value>
@@ -362,5 +363,14 @@
   </data>
   <data name="fromSHPToolStripMenuItem2.Text" xml:space="preserve">
     <value>Abrir SHP</value>
+  </data>
+  <data name="zoomToHomeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ir para o Home</value>
+  </data>
+  <data name="zoomToMissionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ir para a Missão</value>
+  </data>
+  <data name="zoomToVehicleToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ir para o Drone</value>
   </data>
 </root>

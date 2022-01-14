@@ -529,7 +529,7 @@
     <value>22</value>
   </data>
   <data name="label40.Text" xml:space="preserve">
-    <value>Ground Elevation:</value>
+    <value>Elevação do solo:</value>
   </data>
   <data name="lbl_turnrad.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -601,7 +601,7 @@
     <value>18</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
-    <value>Photo every (est):</value>
+    <value>Foto a cada:</value>
   </data>
   <data name="lbl_flighttime.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -637,7 +637,7 @@
     <value>16</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
-    <value>Flight Time (est):</value>
+    <value>Tempo de voo:</value>
   </data>
   <data name="lbl_distbetweenlines.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -673,7 +673,7 @@
     <value>14</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
-    <value>Dist between lines:</value>
+    <value>Dist. entre linhas:</value>
   </data>
   <data name="lbl_footprint.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -709,7 +709,7 @@
     <value>12</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
-    <value>Footprint:</value>
+    <value>Projeção:</value>
   </data>
   <data name="lbl_strips.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -763,7 +763,7 @@
     <value>9</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
-    <value>No of Strips:</value>
+    <value>N° de linhas:</value>
   </data>
   <data name="label34.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -817,7 +817,7 @@
     <value>6</value>
   </data>
   <data name="label29.Text" xml:space="preserve">
-    <value>Ground Resolution: </value>
+    <value>Resolução do solo: </value>
   </data>
   <data name="lbl_spacing.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -853,7 +853,7 @@
     <value>4</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
-    <value>Dist between images: </value>
+    <value>Dist. entre imagens: </value>
   </data>
   <data name="lbl_distance.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -907,7 +907,7 @@
     <value>1</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
-    <value>Distance: </value>
+    <value>Distância:</value>
   </data>
   <data name="label22.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -925,7 +925,7 @@
     <value>0</value>
   </data>
   <data name="label22.Text" xml:space="preserve">
-    <value>Area: </value>
+    <value>Área em m²:</value>
   </data>
   <data name="&gt;&gt;label42.Name" xml:space="preserve">
     <value>label42</value>
@@ -2839,7 +2839,7 @@
     <value>61</value>
   </data>
   <data name="label32.Text" xml:space="preserve">
-    <value>Margem de entrada [m]</value>
+    <value>Margens [m]</value>
   </data>
   <data name="label32.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3175,7 +3175,7 @@
     <value>1</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Grid Options</value>
+    <value>Opções de Grid</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -3265,8 +3265,8 @@
     <value>22</value>
   </data>
   <data name="label38.Text" xml:space="preserve">
-    <value>Control-S to save to file
-Control-O to load form file</value>
+    <value>Control-S Salvar .grid
+Control-O Abrir .grid</value>
   </data>
   <data name="&gt;&gt;label38.Name" xml:space="preserve">
     <value>label38</value>
@@ -3458,7 +3458,7 @@ Control-O to load form file</value>
     <value>61</value>
   </data>
   <data name="groupBox6.Text" xml:space="preserve">
-    <value>Simple Options</value>
+    <value>Opções de Voo</value>
   </data>
   <data name="&gt;&gt;groupBox6.Name" xml:space="preserve">
     <value>groupBox6</value>
@@ -3554,7 +3554,7 @@ Control-O to load form file</value>
     <value>2</value>
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
-    <value>Display</value>
+    <value>Mostrar</value>
   </data>
   <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
     <value>groupBox4</value>
@@ -3770,7 +3770,7 @@ Control-O to load form file</value>
     <value>7</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Angulo (bússola) [deg]</value>
+    <value>Ângulo de voo(graus</value>
   </data>
   <data name="NUM_angle.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 33</value>
@@ -3836,7 +3836,7 @@ Control-O to load form file</value>
     <value>1</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Altitude</value>
+    <value>Altura do voo</value>
   </data>
   <data name="CHK_advanced.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3872,7 +3872,7 @@ Control-O to load form file</value>
     <value>4</value>
   </data>
   <data name="CHK_footprints.Text" xml:space="preserve">
-    <value>Marcas</value>
+    <value>Projeção</value>
   </data>
   <data name="CHK_internals.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3890,7 +3890,7 @@ Control-O to load form file</value>
     <value>3</value>
   </data>
   <data name="CHK_internals.Text" xml:space="preserve">
-    <value>Internals</value>
+    <value>Pontos</value>
   </data>
   <data name="CHK_grid.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3926,7 +3926,7 @@ Control-O to load form file</value>
     <value>1</value>
   </data>
   <data name="CHK_markers.Text" xml:space="preserve">
-    <value>Pontos</value>
+    <value>Marcas</value>
   </data>
   <data name="CHK_boundary.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

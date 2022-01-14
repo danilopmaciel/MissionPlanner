@@ -2081,6 +2081,7 @@ namespace MissionPlanner.GCSViews
 
         public void CMB_altmode_SelectedIndexChanged(object sender, EventArgs e)
         {
+            /*
             if (CMB_altmode.SelectedValue == null)
             {
                 CMB_altmode.SelectedIndex = 0;
@@ -2089,6 +2090,10 @@ namespace MissionPlanner.GCSViews
             {
                 currentaltmode = (altmode) CMB_altmode.SelectedValue;
             }
+            */
+            CMB_altmode.SelectedIndex = 0;
+            CMB_altmode.SelectedItem = altmode.Relative;
+            currentaltmode = (altmode)CMB_altmode.SelectedValue; // trava relative mode
         }
 
         public void Cmb_missiontype_SelectedIndexChanged(object sender, EventArgs e)
@@ -4101,7 +4106,8 @@ namespace MissionPlanner.GCSViews
             else
             {
                 CustomMessageBox.Show(
-                    "If you're at the field, connect to your APM and wait for GPS lock. Then click 'Home Location' link to set home to your location");
+                    //"If you're at the field, connect to your APM and wait for GPS lock. Then click 'Home Location' link to set home to your location");
+                    "Se você estiver no local do voo, conecte no drone, aguarde o GPS e clique novamente para atualizar o seu ponto de decolagem."); // tradução
             }
         }
 

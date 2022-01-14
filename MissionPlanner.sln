@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1758
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissionPlanner", "MissionPlanner.csproj", "{A2E22272-95FE-47B6-B050-9AE7E2055BF5}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -214,8 +214,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dowding", "plugins\Dowding\Dowding.csproj", "{FB690197-2695-489C-A47C-439FF3AEF7A8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flasher", "ExtLibs\Flasher\Flasher.csproj", "{6609C54A-71B9-4349-8E79-1DF3293BC7D0}"
-EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "..\Setup1\Setup1.vdproj", "{7B3A5683-2DB0-4C6E-9177-EE2D0FAADAD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -687,9 +685,6 @@ Global
 		{6609C54A-71B9-4349-8E79-1DF3293BC7D0}.All|Any CPU.Build.0 = Release|Any CPU
 		{6609C54A-71B9-4349-8E79-1DF3293BC7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6609C54A-71B9-4349-8E79-1DF3293BC7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B3A5683-2DB0-4C6E-9177-EE2D0FAADAD6}.All|Any CPU.ActiveCfg = Debug
-		{7B3A5683-2DB0-4C6E-9177-EE2D0FAADAD6}.Debug|Any CPU.ActiveCfg = Debug
-		{7B3A5683-2DB0-4C6E-9177-EE2D0FAADAD6}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
