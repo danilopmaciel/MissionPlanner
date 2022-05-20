@@ -17,7 +17,7 @@ namespace MissionPlanner.Utilities
     {
         static Settings _instance;
 
-        public static string AppConfigName { get; set; } = "X Mission Planner"; // nome da pasta meus documentos // pasta padrão 
+        public static string AppConfigName { get; set; } = "XMP Dispenser"; // nome da pasta meus documentos // pasta padrão 
 
         public static Settings Instance
         {

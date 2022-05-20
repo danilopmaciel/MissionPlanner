@@ -275,7 +275,7 @@ namespace MissionPlanner
         public double lng { get; set; }
 
         [GroupText("Position")]
-        [DisplayText("Altitude (alt)")]
+        [DisplayText("Altura (alt)")]
         public float alt
         {
             get => (_alt - altoffsethome) * multiplieralt;
@@ -471,7 +471,7 @@ namespace MissionPlanner
         [GroupText("Sensor")]
         public float mz { get; set; }
 
-        [DisplayText("Mag Field")]
+        [DisplayText("Campo Magnético")]//Mag Field
         [GroupText("Sensor")]
         public float magfield => (float)Math.Sqrt(Math.Pow(mx, 2) + Math.Pow(my, 2) + Math.Pow(mz, 2));
 
@@ -780,7 +780,7 @@ namespace MissionPlanner
         public float target_bearing { get; set; }
 
         [GroupText("NAV")]
-        [DisplayText("Dist to WP (dist)")]
+        [DisplayText("Dist do WP (dist)")]
         public float wp_dist
         {
             get => _wpdist * multiplierdist;
@@ -874,7 +874,8 @@ namespace MissionPlanner
 
         //Time in Air converted to min.sec format for easier reading
         [DisplayText("Time in Air (min.sec)")]
-        public float timeInAirMinSec => (int)(timeInAir / 60) + timeInAir % 60 / 100;
+        public float timeInAirMinSec => (int)(timeSinceArmInAir / 60) + timeSinceArmInAir % 60 / 100;
+
 
         // calced turn rate
         [DisplayText("Turn Rate (speed)")]
@@ -963,7 +964,7 @@ namespace MissionPlanner
 
         //battery
         [GroupText("Battery")]
-        [DisplayText("Bat Voltage (V)")]
+        [DisplayText("Bateria do Drone (V)")]
         public double battery_voltage
         {
             get => _battery_voltage;
@@ -975,7 +976,7 @@ namespace MissionPlanner
         }
 
         [GroupText("Battery")]
-        [DisplayText("Tenção (V)")]
+        [DisplayText("Bateria (V)")]
         public double battery_voltage3 { get; set; }
 
         [GroupText("Battery")]
@@ -1401,7 +1402,7 @@ namespace MissionPlanner
         }
 
         [GroupText("Position")]
-        [DisplayText("Dist to Home (dist)")]
+        [DisplayText("Dist do Home (dist)")]
         public float DistToHome
         {
             get
@@ -1925,7 +1926,7 @@ namespace MissionPlanner
                             if (fence.breach_status != 0)
                             {
                                 // fence breached
-                                messageHigh = "Fence Breach " + (MAVLink.FENCE_BREACH)fence.breach_type;
+                                messageHigh = "Ultrapassou a cerca " + (MAVLink.FENCE_BREACH)fence.breach_type; //geofence
                             }
                         }
 
@@ -2453,7 +2454,7 @@ namespace MissionPlanner
 
                             if (errors_count1 > 0 || errors_count2 > 0)
                             {
-                                messageHigh = "InternalError 0x" + (errors_count1 + (errors_count2 << 16)).ToString("X");
+                                messageHigh = "Erro interno " + (errors_count1 + (errors_count2 << 16)).ToString("X");
                             }
 
                             if (!sensors_health.prearm && sensors_enabled.prearm && sensors_present.prearm)

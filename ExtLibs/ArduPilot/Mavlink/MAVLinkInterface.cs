@@ -4994,8 +4994,8 @@ Mission Planner waits for 2 valid heartbeat packets before connecting");
                             }
                         }
 
-                        if (logdata.StartsWith("Tuning:") || logdata.StartsWith("PreArm:") ||
-                            logdata.StartsWith("Arm:"))
+                        if (logdata.StartsWith("Tuning:") || logdata.StartsWith("Verifique:") ||//prearm:
+                            logdata.StartsWith("Acionamento:"))
                             printit = true;
 
                         if (printit)

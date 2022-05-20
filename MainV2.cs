@@ -856,6 +856,7 @@ namespace MissionPlanner
                 this.Text = splash?.Text;
                 titlebar = splash?.Text;
             }
+            this.Text = "XMP Dispenser";
 
             if (!MONO) // windows only
             {
@@ -3627,7 +3628,7 @@ namespace MissionPlanner
                 System.Configuration.ConfigurationManager.AppSettings["BetaUpdateLocationVersion"] = "";
             }
 
-            try
+            /*try
             {
                 // single update check per day - in a seperate thread
                 if (Settings.Instance["update_check"] != DateTime.Now.ToShortDateString())
@@ -3645,7 +3646,7 @@ namespace MissionPlanner
             {
                 log.Error("Update check failed", ex);
             }
-
+            */
             // play a tlog that was passed to the program/ load a bin log passed
             if (Program.args.Length > 0)
             {

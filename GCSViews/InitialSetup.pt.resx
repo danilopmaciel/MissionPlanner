@@ -133,7 +133,7 @@
     <value>Ajuste Bluetooth</value>
   </data>
   <data name="backstageViewPagecompassmot.Text" xml:space="preserve">
-    <value>Calibrar Motor/Compasso</value>
+    <value>Calibrar Motor/Bússola</value>
   </data>
   <data name="backstageViewPageParachute.Text" xml:space="preserve">
     <value>Paraquedas</value>
@@ -175,7 +175,7 @@
     <value>Modo de Voo</value>
   </data>
   <data name="backstageViewPagecompass.Text" xml:space="preserve">
-    <value>Compasso</value>
+    <value>Bússola</value>
   </data>
   <data name="backstageViewPagemand.Text" xml:space="preserve">
     <value>Hardware Principal</value>

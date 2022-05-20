@@ -1198,7 +1198,7 @@
     <value>45</value>
   </data>
   <data name="label42.Text" xml:space="preserve">
-    <value>Servo</value>
+    <value>Neutro</value>
   </data>
   <data name="num_setservono.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 164</value>
@@ -2635,7 +2635,7 @@
     <value>63</value>
   </data>
   <data name="chk_spline.Text" xml:space="preserve">
-    <value>Spline Exit/Entrys</value>
+    <value>Curvas nos WP's</value>
   </data>
   <data name="chk_spline.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3926,7 +3926,7 @@ Control-O Abrir .grid</value>
     <value>1</value>
   </data>
   <data name="CHK_markers.Text" xml:space="preserve">
-    <value>Marcas</value>
+    <value>WP</value>
   </data>
   <data name="CHK_boundary.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

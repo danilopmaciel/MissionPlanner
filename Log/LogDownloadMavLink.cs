@@ -273,8 +273,8 @@ namespace MissionPlanner.Log
         {
             if (status == SerialStatus.Reading)
             {
-                if (CustomMessageBox.Show(LogStrings.CancelDownload, "Cancel Download", MessageBoxButtons.YesNo) ==
-                    (int)System.Windows.Forms.DialogResult.No)
+                if (CustomMessageBox.Show("Deseja cancelar o download?", "Cancelar Download?", MessageBoxButtons.YesNo) ==
+                    (int)System.Windows.Forms.DialogResult.No)//LogStrings.CancelDownload
                 {
                     e.Cancel = true;
                     return;
@@ -430,7 +430,7 @@ namespace MissionPlanner.Log
                 int[] toDownload = GetSelectedLogIndices().ToArray();
                 if (toDownload.Length == 0)
                 {
-                    AppendSerialLog(LogStrings.NothingSelected);
+                    AppendSerialLog("Selecione os logs.");//LogStrings.NothingSelected
                 }
                 else
                 {
@@ -447,7 +447,7 @@ namespace MissionPlanner.Log
 
         private void BUT_clearlogs_Click(object sender, EventArgs e)
         {
-            if (CustomMessageBox.Show(LogStrings.Confirmation, "sure", MessageBoxButtons.YesNo) ==
+            if (CustomMessageBox.Show("Você tem certeza?", "Atenção", MessageBoxButtons.YesNo) ==
                 (int)System.Windows.Forms.DialogResult.Yes)
             {
                 try

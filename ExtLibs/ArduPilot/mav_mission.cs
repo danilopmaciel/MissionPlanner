@@ -95,7 +95,7 @@ namespace MissionPlanner.ArduPilot
                     // handle current wp upload number
                     int uploadwpno = a;
 
-                    progress?.Invoke(((a*100) / commandlist.Count), "Uploading WP " + a);
+                    progress?.Invoke(((a*100) / commandlist.Count), "Enviando WP " + a);//Uploading WP
 
                     // try send the wp
                     MAVLink.MAV_MISSION_RESULT ans = await port.setWPAsync(sysid, compid, temp, (ushort)(uploadwpno), (MAVLink.MAV_FRAME)temp.frame, 0, 1, use_int, type).ConfigureAwait(false);

@@ -281,7 +281,7 @@ de decolagem</value>
     <value>Apagar</value>
   </data>
   <data name="setHomeHereToolStripMenuItem.Text" xml:space="preserve">
-    <value>Definir ponto de decolagem</value>
+    <value>Definir home</value>
   </data>
   <data name="loitercirclesToolStripMenuItem.Text" xml:space="preserve">
     <value>Circulos</value>
@@ -302,7 +302,7 @@ de decolagem</value>
     <value>Limpar pontos do raly</value>
   </data>
   <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>Plano de Voo</value>
+    <value>Linhas de Voo</value>
   </data>
   <data name="savePolygonToolStripMenuItem.Text" xml:space="preserve">
     <value>Salvar poligono</value>
@@ -372,5 +372,14 @@ de decolagem</value>
   </data>
   <data name="zoomToVehicleToolStripMenuItem.Text" xml:space="preserve">
     <value>Ir para o Drone</value>
+  </data>
+  <data name="currentPositionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Posição atual</value>
+  </data>
+  <data name="mapToolToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ferramentas</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
   </data>
 </root>

@@ -127,7 +127,7 @@
     <value>Transferidor do Log</value>
   </data>
   <data name="BUT_DLall.Text" xml:space="preserve">
-    <value>Descarregar todos os Logs</value>
+    <value>Baixar todos os Logs</value>
   </data>
   <data name="BUT_redokml.Text" xml:space="preserve">
     <value>Recriar KML</value>
@@ -145,16 +145,16 @@
     <value>NOTA: Quando postar perguntas, envie o arquivo .bin</value>
   </data>
   <data name="BUT_DLthese.ToolTip" xml:space="preserve">
-    <value>Descarregar os Logs selecionados na lista acima.</value>
+    <value>Baixar os Logs selecionados na lista acima.</value>
   </data>
   <data name="BUT_redokml.ToolTip" xml:space="preserve">
     <value>Converter os arquivos Log para o formato KML</value>
   </data>
   <data name="BUT_DLthese.Text" xml:space="preserve">
-    <value>Descarregar os arquivos Logs</value>
+    <value>Baixar Logs selecionados</value>
   </data>
   <data name="BUT_clearlogs.Text" xml:space="preserve">
-    <value>Limpar o Log</value>
+    <value>Limpar todos os Logs</value>
   </data>
   <data name="BUT_firstperson.Text" xml:space="preserve">
     <value>Formato KML</value>

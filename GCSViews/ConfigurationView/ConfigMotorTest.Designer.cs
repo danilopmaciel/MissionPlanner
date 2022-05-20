@@ -36,10 +36,10 @@
             this.NUM_duration = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.but_mot_spin_arm = new MissionPlanner.Controls.MyButton();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.but_mot_spin_min = new MissionPlanner.Controls.MyButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.but_mot_spin_arm = new MissionPlanner.Controls.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_thr_percent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUM_duration)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -113,18 +113,6 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // but_mot_spin_arm
-            // 
-            resources.ApplyResources(this.but_mot_spin_arm, "but_mot_spin_arm");
-            this.but_mot_spin_arm.Name = "but_mot_spin_arm";
-            this.but_mot_spin_arm.UseVisualStyleBackColor = true;
-            this.but_mot_spin_arm.Click += new System.EventHandler(this.but_mot_spin_arm_Click);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
@@ -136,6 +124,18 @@
             this.but_mot_spin_min.Name = "but_mot_spin_min";
             this.but_mot_spin_min.UseVisualStyleBackColor = true;
             this.but_mot_spin_min.Click += new System.EventHandler(this.but_mot_spin_min_Click);
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // but_mot_spin_arm
+            // 
+            resources.ApplyResources(this.but_mot_spin_arm, "but_mot_spin_arm");
+            this.but_mot_spin_arm.Name = "but_mot_spin_arm";
+            this.but_mot_spin_arm.UseVisualStyleBackColor = true;
+            this.but_mot_spin_arm.Click += new System.EventHandler(this.but_mot_spin_arm_Click);
             // 
             // ConfigMotorTest
             // 

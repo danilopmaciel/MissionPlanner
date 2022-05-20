@@ -209,7 +209,7 @@ namespace MissionPlanner {
         /// </summary>
         public static string BadLogging {
             get {
-                return ResourceManager.GetString("BadLogging", resourceCulture);
+                return ResourceManager.GetString("Erro de log", resourceCulture);
             }
         }
         

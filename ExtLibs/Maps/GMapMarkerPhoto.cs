@@ -12,8 +12,8 @@ namespace MissionPlanner.Maps
     [Serializable]
     public class GMapMarkerPhoto : GMapMarker
     {
-        static Bitmap localcache1 = new Bitmap(Resources.camera_icon_G, 20, 20);
-        static Bitmap localcache2 = new Bitmap(Resources.camera_icon, 20, 20);
+        static Bitmap localcache1 = new Bitmap(Resources.camera_icon_G, 30, 30);
+        static Bitmap localcache2 = new Bitmap(Resources.camera_icon, 30, 30);
 
         public double Alt { get; set; }
 

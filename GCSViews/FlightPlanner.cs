@@ -593,7 +593,7 @@ namespace MissionPlanner.GCSViews
                 else
                 {
                     if (
-                        CustomMessageBox.Show("This will clear your existing points, Continue?", "Confirm",
+                        CustomMessageBox.Show("Isso apagará os pontos existentes, Continuar?", "Confirm",//"This will clear your existing points, Continue?"
                             MessageBoxButtons.OKCancel) != (int) DialogResult.OK)
                     {
                         return;
@@ -604,11 +604,11 @@ namespace MissionPlanner.GCSViews
             IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Receiving WP's"
+                Text = "Recebendo Missão"
             };
 
             frmProgressReporter.DoWork += getWPs;
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Receiving WP's");
+            frmProgressReporter.UpdateProgressAndStatus(-1, "Recebendo Missão");
 
             ThemeManager.ApplyThemeTo(frmProgressReporter);
 
@@ -1774,6 +1774,8 @@ namespace MissionPlanner.GCSViews
                             CustomMessageBox.Show("Error opening File", Strings.ERROR);
                             return;
                         }
+                        
+
                     }
                     else
                     {
@@ -1804,6 +1806,7 @@ namespace MissionPlanner.GCSViews
                     }
 
                     lbl_wpfile.Text = "Loaded " + Path.GetFileName(file);
+                    label7.Text = "Arquivo aberto: " + Path.GetFileName(file);
                 }
             }
         }
@@ -1893,12 +1896,12 @@ namespace MissionPlanner.GCSViews
             IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Sending WP's"
+                Text = "Enviando Missão"//"Sending WP's"
             };
 
             frmProgressReporter.DoWork += saveWPsFast;
 
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Sending WP's");
+            frmProgressReporter.UpdateProgressAndStatus(-1, "Enviando WP");
 
             ThemeManager.ApplyThemeTo(frmProgressReporter);
 
@@ -1917,7 +1920,7 @@ namespace MissionPlanner.GCSViews
 
             if (polygon.Count == 0)
             {
-                CustomMessageBox.Show("Please define a polygon!");
+                CustomMessageBox.Show("Favor definir um polígono");//Please define a polygon!
                 return 0;
             }
 
@@ -2588,7 +2591,7 @@ namespace MissionPlanner.GCSViews
             polygonToolStripMenuItem.Visible = true;
             geoFenceToolStripMenuItem.Visible = false;
             rallyPointsToolStripMenuItem.Visible = false;
-            mapToolToolStripMenuItem.Visible = false;
+            mapToolToolStripMenuItem.Visible = true;
             pOIToolStripMenuItem.Visible = false;
             trackerHomeToolStripMenuItem.Visible = false; // nao funciona
             createWpCircleToolStripMenuItem.Visible = false;
@@ -3887,7 +3890,7 @@ namespace MissionPlanner.GCSViews
         public void insertWpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string wpno = (selectedrow + 1).ToString("0");
-            if (InputBox.Show("Insert WP", "Insert WP after wp#", ref wpno) == DialogResult.OK)
+            if (InputBox.Show("Inserir WP", "Inserir depois do WP:", ref wpno) == DialogResult.OK)
             {
                 try
                 {
@@ -3895,7 +3898,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Invalid insert position", Strings.ERROR);
+                    CustomMessageBox.Show("Posição invalida", Strings.ERROR);
                     return;
                 }
 
@@ -5588,6 +5591,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
                         sw.Close();
 
                         lbl_wpfile.Text = "Saved " + Path.GetFileName(file);
+                        
                     }
                     catch (Exception)
                     {
@@ -7465,6 +7469,7 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
             MethodInvoker m = delegate
             {
                 lbl_status.Text = "Status: loaded tiles";
+                
 
                 //panelMenu.Text = "Menu, last load in " + MainMap.ElapsedMilliseconds + "ms";
 
@@ -7640,13 +7645,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         public void zoomToToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string place = "Perth Airport, Australia";
-            if (DialogResult.OK == InputBox.Show("Location", "Enter your location", ref place))
+            string place = "Bauru, SP";
+            if (DialogResult.OK == InputBox.Show("Localização", "Entre com a localização desejada:", ref place))
             {
                 GeoCoderStatusCode status = MainMap.SetPositionByKeywords(place);
                 if (status != GeoCoderStatusCode.G_GEO_SUCCESS)
                 {
-                    CustomMessageBox.Show("Google Maps Geocoder can't find: '" + place + "', reason: " + status,
+                    CustomMessageBox.Show("Google Maps não pode encontrar: '" + place + "', motivo: " + status,
                         "GMap.NET", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else

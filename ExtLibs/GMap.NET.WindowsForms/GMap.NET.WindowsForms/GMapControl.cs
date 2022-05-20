@@ -3080,6 +3080,23 @@ namespace GMap.NET.WindowsForms
             this.ForceUpdateOverlays();
         }
 
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // GMapControl
+            // 
+            this.Name = "GMapControl";
+            this.Load += new System.EventHandler(this.GMapControl_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void GMapControl_Load(object sender, EventArgs e)
+        {
+
+        }
+
         #endregion
 
 #endif

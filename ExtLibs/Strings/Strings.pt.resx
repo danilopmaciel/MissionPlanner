@@ -517,10 +517,10 @@
     <value>Sem atualização disponível</value>
   </data>
   <data name="InvalidBoardType" xml:space="preserve">
-    <value>Typo de placa invalida</value>
+    <value>TIpo de placa invalida</value>
   </data>
   <data name="DISCONNECTc" xml:space="preserve">
-    <value>DISCONECTADO</value>
+    <value>DESCONECTAR</value>
   </data>
   <data name="Scanning_File" xml:space="preserve">
     <value>Buscando arquivo</value>
