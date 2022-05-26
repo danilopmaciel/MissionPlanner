@@ -270,6 +270,9 @@
   <data name="BUT_Geotagimages.Text" xml:space="preserve">
     <value>GeoTag Images</value>
   </data>
+  <data name="BUT_Geotagimages.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;BUT_Geotagimages.Name" xml:space="preserve">
     <value>BUT_Geotagimages</value>
   </data>
@@ -1178,6 +1181,9 @@
   </data>
   <data name="RDIO_trigmsg.Text" xml:space="preserve">
     <value>Trigger Message</value>
+  </data>
+  <data name="RDIO_trigmsg.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;RDIO_trigmsg.Name" xml:space="preserve">
     <value>RDIO_trigmsg</value>

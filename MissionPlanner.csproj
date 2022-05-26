@@ -4580,6 +4580,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\logo_xfly_21.png" />
+    <None Include="Resources\GRANEL.png" />
+    <None Include="Resources\PPK.png" />
+    <None Include="Resources\TUBETE.png" />
+    <None Include="Resources\capa mission planner tubete.jpg" />
     <Content Include="rotmat.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

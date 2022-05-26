@@ -767,7 +767,7 @@ namespace MissionPlanner.GeoRef
             if (files.Count != list.Count)
             {
                 AppendText(string.Format("CAM Msgs and Files discrepancy. Check it! files: {0} vs CAM msg: {1}\n",files.Count,list.Count));
-                return null;
+                return null; //alterado
             }
 
             files.Sort(compareFileByPhotoTime);

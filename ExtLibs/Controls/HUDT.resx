@@ -112,13 +112,13 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ARMED" xml:space="preserve">
-    <value>ARMED</value>
+    <value>ACIONADO</value>
   </data>
   <data name="AS" xml:space="preserve">
     <value>AS </value>
@@ -130,22 +130,23 @@
     <value>Cell</value>
   </data>
   <data name="DISARMED" xml:space="preserve">
-    <value>DISARMED</value>
+    <value>DESLIGADO</value>
   </data>
   <data name="E" xml:space="preserve">
     <value>E</value>
   </data>
   <data name="FAILSAFE" xml:space="preserve">
-    <value>FAILSAFE</value>
+    <value>FailSafe</value>
   </data>
-  <data name="FailsafeH" type="System.Int32" xml:space="preserve">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FailsafeH" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="Font" xml:space="preserve">
     <value>Arial</value>
   </data>
   <data name="GPS0" xml:space="preserve">
-    <value>GPS: No GPS</value>
+    <value>GPS: SEM GPS</value>
   </data>
   <data name="GPS1" xml:space="preserve">
     <value>GPS: No Fix</value>
@@ -162,7 +163,7 @@
   <data name="GPS5" xml:space="preserve">
     <value>GPS: rtk Float</value>
   </data>
-    <data name="GPS6" xml:space="preserve">
+  <data name="GPS6" xml:space="preserve">
     <value>GPS: rtk Fixed</value>
   </data>
   <data name="GS" xml:space="preserve">

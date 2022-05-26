@@ -684,7 +684,7 @@ namespace MissionPlanner
                         }
                         else
                         {
-                            PRsender.doWorkArgs.ErrorMessage = "No Heartbeat Packets Received";
+                            PRsender.doWorkArgs.ErrorMessage = "Não foi possível conectar ao Drone.";
                             throw new Exception(@"Can not establish a connection
 
 Please check the following
@@ -1658,7 +1658,7 @@ Mission Planner waits for 2 valid heartbeat packets before connecting");
                 if ((MAVlist[sysid,compid].cs.capabilities & (int) MAV_PROTOCOL_CAPABILITY.FTP) > 0)
                 {
                     if (frmProgressReporter != null)
-                        frmProgressReporter.UpdateProgressAndStatus(-1, $"Checking for Param MAVFTP {sysid}-{compid}");
+                        frmProgressReporter.UpdateProgressAndStatus(-1, $"Checando os parâmentros {sysid}-{compid}");
                     var cancel = new CancellationTokenSource();
                     var paramfileTask = Task.Run<MemoryStream>(() =>
                     {
@@ -4994,8 +4994,8 @@ Mission Planner waits for 2 valid heartbeat packets before connecting");
                             }
                         }
 
-                        if (logdata.StartsWith("Tuning:") || logdata.StartsWith("PreArm:") ||
-                            logdata.StartsWith("Arm:"))
+                        if (logdata.StartsWith("Tuning:") || logdata.StartsWith("Verifique:") ||//prearm:
+                            logdata.StartsWith("Acionamento:"))
                             printit = true;
 
                         if (printit)

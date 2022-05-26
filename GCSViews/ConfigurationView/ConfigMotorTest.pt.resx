@@ -124,7 +124,7 @@
     <value>Duração (s)</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Acelerador %</value>
+    <value>Acel %</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Teste do Motor</value>

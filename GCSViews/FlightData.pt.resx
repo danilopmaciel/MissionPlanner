@@ -175,16 +175,16 @@
     <value>Arm o Mav</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Direcione ao WPT atual</value>
+    <value>Direção para o WP</value>
   </data>
   <data name="BUT_clear_track.Text" xml:space="preserve">
     <value>Limpar rastro</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Heading atual</value>
+    <value>Direção atual</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Heading do alvo</value>
+    <value>Direção do alvo</value>
   </data>
   <data name="userItemsToolStripMenuItem.Text" xml:space="preserve">
     <value>Itens do usuario</value>
@@ -220,7 +220,7 @@
     <value>Ajuste do angulo altitude</value>
   </data>
   <data name="triggerCameraToolStripMenuItem.Text" xml:space="preserve">
-    <value>Teste Câmera</value>
+    <value>Teste de Câmera</value>
   </data>
   <data name="but_disablejoystick.Text" xml:space="preserve">
     <value>Desabilitar Joystick</value>
@@ -322,7 +322,7 @@
     <value>Land</value>
   </data>
   <data name="onOffCameraOverlapToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mostrar Sobreposição da camera</value>
+    <value>Mostrar Sobreposição da Câmera</value>
   </data>
   <data name="BUT_logbrowse.Text" xml:space="preserve">
     <value>Rever log</value>
@@ -360,5 +360,8 @@ para .log</value>
   </data>
   <data name="BUT_georefimage.Text" xml:space="preserve">
     <value>Georreferenciar Imagens</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Direção do GPS</value>
   </data>
 </root>

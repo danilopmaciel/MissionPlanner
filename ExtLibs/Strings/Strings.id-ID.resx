@@ -268,7 +268,7 @@
     <value>Invalid PortName</value>
   </data>
   <data name="ConnectFailed" xml:space="preserve">
-    <value>Connect Failed</value>
+    <value>Erro ao conectar</value>
   </data>
   <data name="ExtendedTuning" xml:space="preserve">
     <value>Extended Tuning</value>
@@ -283,7 +283,7 @@
     <value>Failed read HEX</value>
   </data>
   <data name="Connect" xml:space="preserve">
-    <value>Connect</value>
+    <value>Conectar</value>
   </data>
   <data name="Click_when_Done" xml:space="preserve">
     <value>Click when Done</value>
@@ -318,7 +318,7 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>Mavlink Connecting...</value>
   </data>
   <data name="GettingParams" xml:space="preserve">
-    <value>Getting Params</value>
+    <value>Baixando parâmetros </value>
   </data>
   <data name="FailedToReadHex" xml:space="preserve">
     <value>Failed to read firmware.hex :</value>
@@ -327,10 +327,10 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>Update Now</value>
   </data>
   <data name="Gotparam" xml:space="preserve">
-    <value>Got param </value>
+    <value>Parametros recebidos </value>
   </data>
   <data name="Failclog" xml:space="preserve">
-    <value>Failed to create log - wont log this session</value>
+    <value>Falha ao criar .tlog, verifique a pasta do XMP!</value>
   </data>
   <data name="DetectingBoardVersion" xml:space="preserve">
     <value>Detecting Board Version</value>
@@ -349,10 +349,10 @@ Please contact your hardware vendor about signing your hardware.</value>
 </value>
   </data>
   <data name="BadCompassHealth" xml:space="preserve">
-    <value>Bad Compass Health</value>
+    <value>Erro na Bússola</value>
   </data>
   <data name="InvalidBaudRate" xml:space="preserve">
-    <value>Invalid BaudRate</value>
+    <value>Velocidade de porta invalida!</value>
   </data>
   <data name="ErrorFirmwareFile" xml:space="preserve">
     <value>Error loading firmware file</value>
@@ -364,13 +364,13 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>Only 1 Heatbeat Received</value>
   </data>
   <data name="compass_variance" xml:space="preserve">
-    <value>compass variance</value>
+    <value>Variação de Bússola!</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="BadGyroHealth" xml:space="preserve">
-    <value>Bad Gyro Health</value>
+    <value>Erro no Giroscópio</value>
   </data>
   <data name="ErrorReceivingParams" xml:space="preserve">
     <value>Error receiving list
@@ -380,13 +380,13 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>Bad OptFlow Health</value>
   </data>
   <data name="ERROR" xml:space="preserve">
-    <value>Error</value>
+    <value>Erro!</value>
   </data>
   <data name="RunAnyway" xml:space="preserve">
     <value>run anyway</value>
   </data>
   <data name="Disconnect" xml:space="preserve">
-    <value>Disconnect</value>
+    <value>Desconectar</value>
   </data>
   <data name="Units" xml:space="preserve">
     <value>Units: {0}{1}</value>
@@ -407,7 +407,7 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>Failed upload</value>
   </data>
   <data name="ErrorRejectedByMAV" xml:space="preserve">
-    <value>Error: command rejected by MAV</value>
+    <value>Erro: comando não enviado!</value>
   </data>
   <data name="RawParamWarning" xml:space="preserve">
     <value>Raw Param Warning</value>
@@ -416,14 +416,14 @@ Please contact your hardware vendor about signing your hardware.</value>
     <value>Downloading from Internet</value>
   </data>
   <data name="ErrorConnecting" xml:space="preserve">
-    <value>Error Connecting
+    <value>Erro ao Conectar
 </value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Continue</value>
   </data>
   <data name="PleaseLoadValidFile" xml:space="preserve">
-    <value>Please load a valid file</value>
+    <value>Favor abrir um arquivo valido</value>
   </data>
   <data name="InvalidPanRange" xml:space="preserve">
     <value>Invalid Pan Range</value>
@@ -451,7 +451,7 @@ Please use Standard/Advanced Params for the safe settings</value>
     <value>Verify Firmware</value>
   </data>
   <data name="CONNECTc" xml:space="preserve">
-    <value>CONNECT</value>
+    <value>Conectar</value>
   </data>
   <data name="PleaseConnectAndBackupConfig" xml:space="preserve">
     <value>Please connect and backup your config in the configuration tab.</value>
@@ -479,7 +479,7 @@ Please use Standard/Advanced Params for the safe settings</value>
 Please upgrade</value>
   </data>
   <data name="GeofenceBreach" xml:space="preserve">
-    <value>Geofence Breach</value>
+    <value>Ultrapassou limites!</value>
   </data>
   <data name="PleaseWaitForTheMusicalTones" xml:space="preserve">
     <value>Please wait for the musical tones to finish before clicking OK</value>
@@ -521,10 +521,10 @@ Please upgrade</value>
     <value>Ensure your props are not on the Plane/Quad</value>
   </data>
   <data name="NORCReceiver" xml:space="preserve">
-    <value>NO RC Receiver</value>
+    <value>Sem sinal de RC</value>
   </data>
   <data name="BadBaroHealth" xml:space="preserve">
-    <value>Bad Baro Health</value>
+    <value>Erro no Barômetro</value>
   </data>
   <data name="UpdateNotFound" xml:space="preserve">
     <value>No update available.</value>
@@ -533,16 +533,16 @@ Please upgrade</value>
     <value>Invalid Board Type</value>
   </data>
   <data name="DISCONNECTc" xml:space="preserve">
-    <value>DISCONNECT</value>
+    <value>Desconectar</value>
   </data>
   <data name="ErrorNotConnected" xml:space="preserve">
-    <value>You are not connected.</value>
+    <value>Você não está conectado.</value>
   </data>
   <data name="ReadingHexFile" xml:space="preserve">
     <value>Reading Hex File</value>
   </data>
   <data name="FlightModes" xml:space="preserve">
-    <value>Flight Modes</value>
+    <value>Modos de Voo</value>
   </data>
   <data name="Invalid_home_location" xml:space="preserve">
     <value>Invalid home location</value>

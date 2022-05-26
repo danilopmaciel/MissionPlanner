@@ -142,7 +142,7 @@
     <value>Localização Kml</value>
   </data>
   <data name="RDIO_CAMMsgSynchro.Text" xml:space="preserve">
-    <value>Utilizar Disparo do Drone</value>
+    <value>Utilizar Retorno da Câmera</value>
   </data>
   <data name="RDIO_TimeOffset.Text" xml:space="preserve">
     <value>Desvio de tempo</value>
@@ -151,7 +151,7 @@
     <value>Inserir Coordenadas</value>
   </data>
   <data name="RDIO_trigmsg.Text" xml:space="preserve">
-    <value>Utilizar Retorno da Câmera</value>
+    <value>Utilizar Disparo do Drone</value>
   </data>
   <data name="BUT_estoffset.Text" xml:space="preserve">
     <value>Desvio estimado</value>

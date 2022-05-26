@@ -24,11 +24,11 @@ namespace MissionPlanner.Utilities
         public enum StartPosition
         {
             Home = 0,
-            BottomLeft = 1,
-            TopLeft = 2,
-            BottomRight = 3,
-            TopRight = 4,
-            Point = 5,
+            BaixoEsquerda = 1,
+            AcimaEsquerda = 2,
+            BaixoDireita = 3,
+            AcimaDireita = 4,
+            NoPonto = 5,
         }
 
         public static PointLatLngAlt StartPointLatLngAlt = PointLatLngAlt.Zero;
@@ -525,19 +525,19 @@ namespace MissionPlanner.Utilities
                 case StartPosition.Home:
                     startposutm = new utmpos(HomeLocation);
                     break;
-                case StartPosition.BottomLeft:
+                case StartPosition.BaixoEsquerda:
                     startposutm = new utmpos(area.Left, area.Bottom, utmzone);
                     break;
-                case StartPosition.BottomRight:
+                case StartPosition.BaixoDireita:
                     startposutm = new utmpos(area.Right, area.Bottom, utmzone);
                     break;
-                case StartPosition.TopLeft:
+                case StartPosition.AcimaEsquerda:
                     startposutm = new utmpos(area.Left, area.Top, utmzone);
                     break;
-                case StartPosition.TopRight:
+                case StartPosition.AcimaDireita:
                     startposutm = new utmpos(area.Right, area.Top, utmzone);
                     break;
-                case StartPosition.Point:
+                case StartPosition.NoPonto:
                     startposutm = new utmpos(StartPointLatLngAlt);
                     break;
             }

@@ -593,7 +593,7 @@ namespace MissionPlanner.GCSViews
                 else
                 {
                     if (
-                        CustomMessageBox.Show("This will clear your existing points, Continue?", "Confirm",
+                        CustomMessageBox.Show("Isso apagará os pontos existentes, Continuar?", "Confirm",
                             MessageBoxButtons.OKCancel) != (int) DialogResult.OK)
                     {
                         return;
@@ -604,11 +604,11 @@ namespace MissionPlanner.GCSViews
             IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Receiving WP's"
+                Text = "Recebendo Missão"
             };
 
             frmProgressReporter.DoWork += getWPs;
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Receiving WP's");
+            frmProgressReporter.UpdateProgressAndStatus(-1, "Recebendo Missão");
 
             ThemeManager.ApplyThemeTo(frmProgressReporter);
 
@@ -693,12 +693,12 @@ namespace MissionPlanner.GCSViews
             IProgressReporterDialogue frmProgressReporter = new ProgressReporterDialogue
             {
                 StartPosition = FormStartPosition.CenterScreen,
-                Text = "Sending WP's"
+                Text = "Gravando Missão"
             };
 
             frmProgressReporter.DoWork += saveWPs;
 
-            frmProgressReporter.UpdateProgressAndStatus(-1, "Sending WP's");
+            frmProgressReporter.UpdateProgressAndStatus(-1, "Gravando Missão");
 
             ThemeManager.ApplyThemeTo(frmProgressReporter);
 
@@ -2588,7 +2588,7 @@ namespace MissionPlanner.GCSViews
             polygonToolStripMenuItem.Visible = true;
             geoFenceToolStripMenuItem.Visible = false;
             rallyPointsToolStripMenuItem.Visible = false;
-            mapToolToolStripMenuItem.Visible = false;
+            mapToolToolStripMenuItem.Visible = true;
             pOIToolStripMenuItem.Visible = false;
             trackerHomeToolStripMenuItem.Visible = false; // nao funciona
             createWpCircleToolStripMenuItem.Visible = false;
@@ -3887,7 +3887,7 @@ namespace MissionPlanner.GCSViews
         public void insertWpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string wpno = (selectedrow + 1).ToString("0");
-            if (InputBox.Show("Insert WP", "Insert WP after wp#", ref wpno) == DialogResult.OK)
+            if (InputBox.Show("Inserir WP", "Inserir depois do WP:", ref wpno) == DialogResult.OK)
             {
                 try
                 {
@@ -3895,7 +3895,7 @@ namespace MissionPlanner.GCSViews
                 }
                 catch
                 {
-                    CustomMessageBox.Show("Invalid insert position", Strings.ERROR);
+                    CustomMessageBox.Show("Posição invalida", Strings.ERROR);
                     return;
                 }
 
@@ -5141,7 +5141,7 @@ namespace MissionPlanner.GCSViews
                     {
                         if (cellhome.Value.ToString() != TXT_homelat.Text && cellhome.Value.ToString() != "0")
                         {
-                            var dr = CustomMessageBox.Show("Reset Home to loaded coords", "Reset Home Coords",
+                            var dr = CustomMessageBox.Show("Atualizar coordenadas de decolagem?", "Atualizar Home",
                                 MessageBoxButtons.YesNo);
 
                             if (dr == (int) DialogResult.Yes)
@@ -7640,13 +7640,13 @@ Column 1: Field type (RALLY is the only one at the moment -- may have RALLY_LAND
 
         public void zoomToToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string place = "Perth Airport, Australia";
-            if (DialogResult.OK == InputBox.Show("Location", "Enter your location", ref place))
+            string place = "Bauru, SP";
+            if (DialogResult.OK == InputBox.Show("Localização", "Entre com a localização desejada:", ref place))
             {
                 GeoCoderStatusCode status = MainMap.SetPositionByKeywords(place);
                 if (status != GeoCoderStatusCode.G_GEO_SUCCESS)
                 {
-                    CustomMessageBox.Show("Google Maps Geocoder can't find: '" + place + "', reason: " + status,
+                    CustomMessageBox.Show("Google Maps não pode encontrar: '" + place + "', motivo: " + status,
                         "GMap.NET", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else

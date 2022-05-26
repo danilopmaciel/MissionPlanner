@@ -160,7 +160,7 @@
     <value>Ajuste básico</value>
   </data>
   <data name="ConnectingMavlink" xml:space="preserve">
-    <value>Conectar Mavlink</value>
+    <value>Conectar</value>
   </data>
   <data name="InvalidUpdateRate" xml:space="preserve">
     <value>Taxa de atualização inválida</value>
@@ -313,7 +313,7 @@
     <value>Hardware não suportado. Essa placa não contem um certificado de autenticação valido. Contate seu vendedor de hardware para ele validar a placa.</value>
   </data>
   <data name="MavlinkConnecting" xml:space="preserve">
-    <value>Conectando o Mavlink...</value>
+    <value>Conectando ao Drone ...</value>
   </data>
   <data name="GettingParams" xml:space="preserve">
     <value>Recebendo parametros</value>
@@ -400,7 +400,7 @@
     <value>Falhou em transmitir</value>
   </data>
   <data name="ErrorRejectedByMAV" xml:space="preserve">
-    <value>Erro: comando rejeitado pelo MAV</value>
+    <value>Erro: comando rejeitado pelo Drone</value>
   </data>
   <data name="RawParamWarning" xml:space="preserve">
     <value>Aviso de parametros brutos</value>
@@ -409,7 +409,7 @@
     <value>Arquivo KML ruim:</value>
   </data>
   <data name="DownloadingFromInternet" xml:space="preserve">
-    <value>Baixando da internete</value>
+    <value>Baixando da internet</value>
   </data>
   <data name="ErrorConnecting" xml:space="preserve">
     <value>Erro conectando</value>
@@ -520,7 +520,7 @@
     <value>Typo de placa invalida</value>
   </data>
   <data name="DISCONNECTc" xml:space="preserve">
-    <value>DISCONECTADO</value>
+    <value>DESCONECTAR</value>
   </data>
   <data name="Scanning_File" xml:space="preserve">
     <value>Buscando arquivo</value>
